@@ -1,0 +1,92 @@
+:root {
+  --background-light-rgb: 30 41 59;
+
+  --border-rgb: 255 255 255;
+  --border: 1px solid rgb(var(--border-rgb) / 20%);
+
+  --hyperplexed-main-rgb: 41 121 255;
+  --hyperplexed-main-light-rgb: 56 182 255;
+  --hyperplexed-secondary-rgb: 42 252 152;
+
+  --card-size: 480px;
+  --font-size: 1rem;
+  --logo-size: calc(var(--card-size));
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.card {
+  width: var(--card-size);
+  height: 100%;
+  word-break: break-all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  position: relative;
+  margin: 1rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.card_image > img {
+  width: var(--logo-size);
+}
+
+.card_gradient {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: radial-gradient(rgb(var(--hyperplexed-main-light-rgb)), rgb(var(--hyperplexed-secondary-rgb)));
+  mix-blend-mode: darken;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.card_letters {
+  --x: 0px;
+  --y: 0px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-size: var(--font-size);
+  font-weight: 500;
+  word-wrap: break-word;
+  opacity: 0;
+  transition: opacity 400ms;
+  mask-image: radial-gradient(
+    calc(var(--card-size) * 0.5) circle at var(--x) var(--y),
+    rgb(255 255 255) 20%,
+    rgb(255 255 255 / 25%),
+    transparent
+  );
+  -webkit-mask-image: radial-gradient(
+    calc(var(--card-size) * 0.5) circle at var(--x) var(--y),
+    rgb(255 255 255) 20%,
+    rgb(255 255 255 / 25%),
+    transparent
+  );
+  scale: 1.01;
+}
+
+.card:hover .card_letters {
+  opacity: 1;
+}
