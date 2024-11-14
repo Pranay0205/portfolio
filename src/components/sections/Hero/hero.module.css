@@ -1,13 +1,4 @@
 :root {
-  --background-light-rgb: 30 41 59;
-
-  --border-rgb: 255 255 255;
-  --border: 1px solid rgb(var(--border-rgb) / 20%);
-
-  --hyperplexed-main-rgb: 41 121 255;
-  --hyperplexed-main-light-rgb: 56 182 255;
-  --hyperplexed-secondary-rgb: 42 252 152;
-
   --card-size: 480px;
   --font-size: 1rem;
   --logo-size: calc(var(--card-size));
@@ -19,6 +10,21 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
+  font-size: calc(var(--font-size) * 1.5);
+}
+
+.hero_content {
+  font-weight: 700;
+}
+
+.hero_rotating_word {
+  background: linear-gradient(75deg, #4a93ff, #00b9fe, #00dbec, #00f4cd, #00ffa4, #00ff75, #abff41, #ffee00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero_name_text {
 }
 
 .card {
@@ -52,7 +58,7 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  background: radial-gradient(rgb(var(--hyperplexed-main-light-rgb)), rgb(var(--hyperplexed-secondary-rgb)));
+  background: radial-gradient(#4a93ff, #00b9fe, #00dbec, #00f4cd, #00ffa4, #00ff75, #abff41, #ffee00);
   mix-blend-mode: darken;
   pointer-events: none;
   z-index: 3;
@@ -89,4 +95,63 @@
 
 .card:hover .card_letters {
   opacity: 1;
+}
+
+/* Mobile devices (320px - 480px) */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  /* Mobile styles */
+}
+
+/* iPads, Tablets (481px - 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* Tablet styles */
+}
+
+/* Small screens, laptops (769px - 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Small screen styles */
+}
+
+/* Desktops, large screens (1025px - 1200px) */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .hero {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-size: calc(var(--font-size) * 1);
+    flex-wrap: wrap-reverse;
+  }
+}
+
+/* Extra large screens, TV (1201px and up) */
+@media only screen and (min-width: 1201px) {
+  .hero {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-size: calc(var(--font-size) * 1.5);
+    flex-wrap: wrap-reverse;
+  }
+}
+
+/* For retina screens */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+  /* Retina display styles */
+}
+
+/* For landscape mode */
+@media only screen and (orientation: landscape) {
+  /* Landscape styles */
+}
+
+/* For dark mode */
+@media (prefers-color-scheme: dark) {
+  /* Dark mode styles */
+}
+
+/* For users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  /* Reduced motion styles */
 }

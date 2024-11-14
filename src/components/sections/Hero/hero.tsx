@@ -19,12 +19,10 @@ function randomString(size: number): string {
 export default function Hero() {
   const [binaryString, setBinaryString] = useState<string>("");
 
-  const [isHovered, setIsHovered] = useState<boolean>(false);
-
   const cardLetterRef = useRef<HTMLDivElement>(null);
 
   const updateBinaryString = () => {
-    setBinaryString(randomString(2000));
+    setBinaryString(randomString(1500));
   };
 
   function handleOnMouseMove(e: React.MouseEvent<HTMLDivElement, MouseEvent>) {
@@ -43,19 +41,16 @@ export default function Hero() {
     }
   }
 
-  useEffect(() => {
-    // Initial Generation
-    updateBinaryString();
+  function handleTouchEvent(e: React.TouchEvent<HTMLDivElement>) {}
 
-    //Update on Resize
-    window.addEventListener("resize", updateBinaryString);
-
-    return () => {
-      window.removeEventListener("resize", updateBinaryString);
-    };
-  }, [isHovered]);
-
-  const words = ["scalable", "high-performance", "innovative", "robust", "efficient"];
+  const words = [
+    "404 pages",
+    "infinite loops",
+    "production fires",
+    "console logs",
+    "hardcoding values",
+    "poor documentation",
+  ];
 
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
 
@@ -69,44 +64,44 @@ export default function Hero() {
   return (
     <div className={classes.hero}>
       <div className={classes.hero_content}>
-        <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-          Hi, my name is{" "}
-        </motion.p>
-        <motion.h1
+        <motion.p
+          className={classes.hero_small_text}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          transition={{ duration: 0.5 }}
         >
+          Hi, my name is{" "}
+        </motion.p>
+        <motion.h1 className={classes.hero_name_text} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
           Pranay Ghuge
         </motion.h1>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="text-xl text-gray-800"
+          style={{ display: "block", maxWidth: "75rem" }}
+          className={classes.hero_intro_text}
         >
-          I'm a full-stack developer with a passion for building{" "}
-          <span className="relative inline-block">
-            <AnimatePresence mode="wait">
-              <motion.span
-                key={words[currentWordIndex]}
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-              >
-                {words[currentWordIndex]}{" "}
-              </motion.span>
-            </AnimatePresence>
-          </span>
-          web applications.
+          a Software Engineer, Found my way through
+          <AnimatePresence mode="sync">
+            <motion.span
+              key={words[currentWordIndex]}
+              initial={{ opacity: 0, y: 50, margin: "1rem", width: "15rem" }}
+              animate={{ opacity: 1, y: 0, margin: "1rem" }}
+              style={{ display: "inline-block" }}
+              className={classes.hero_rotating_word}
+            >
+              {words[currentWordIndex]}
+            </motion.span>
+          </AnimatePresence>
+          <p> to build something amazing</p>
         </motion.div>
       </div>
       <div className={classes.card_wrapper}>
         <div
           className={classes.card}
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
           onMouseMove={(e) => handleOnMouseMove(e)}
+          onTouchMove={(e) => handleTouchEvent(e)}
+          aria-hidden="true"
         >
           <div className={classes.card_image}>
             <img src={myLightingDP} alt="logo" className={classes.profile_image} />
