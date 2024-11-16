@@ -4,29 +4,59 @@
   --logo-size: calc(var(--card-size));
 }
 
-.hero {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  font-size: calc(var(--font-size) * 1.5);
+/* Base mobile styles */
+@media (max-width: 640px) {
+  :root {
+    --card-size: 320px;
+    --font-size: 0.75rem;
+    --logo-size: calc(var(--card-size) * 0.9);
+  }
+
+  .card {
+    margin: 0.5rem;
+    border-radius: 1.5rem;
+  }
+
+  .card_letters {
+    mask-image: radial-gradient(
+      calc(var(--card-size) * 0.4) circle at var(--x) var(--y),
+      rgb(255 255 255) 20%,
+      rgb(255 255 255 / 25%),
+      transparent
+    );
+    -webkit-mask-image: radial-gradient(
+      calc(var(--card-size) * 0.4) circle at var(--x) var(--y),
+      rgb(255 255 255) 20%,
+      rgb(255 255 255 / 25%),
+      transparent
+    );
+  }
 }
 
-.hero_content {
-  font-weight: 700;
+/* Tablet styles */
+@media (min-width: 641px) and (max-width: 1024px) {
+  :root {
+    --card-size: 400px;
+    --font-size: 0.875rem;
+    --logo-size: calc(var(--card-size) * 0.95);
+  }
+
+  .card {
+    margin: 0.75rem;
+    border-radius: 1.75rem;
+  }
 }
 
-.hero_rotating_word {
-  background: linear-gradient(75deg, #4a93ff, #00b9fe, #00dbec, #00f4cd, #00ffa4, #00ff75, #abff41, #ffee00);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+/* Larger screens */
+@media (min-width: 1025px) {
+  :root {
+    --card-size: 480px;
+    --font-size: 1rem;
+    --logo-size: calc(var(--card-size));
+  }
 }
 
-.hero_name_text {
-}
-
+/* Your original CSS */
 .card {
   width: var(--card-size);
   height: 100%;
@@ -97,61 +127,13 @@
   opacity: 1;
 }
 
-/* Mobile devices (320px - 480px) */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  /* Mobile styles */
-}
-
-/* iPads, Tablets (481px - 768px) */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  /* Tablet styles */
-}
-
-/* Small screens, laptops (769px - 1024px) */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  /* Small screen styles */
-}
-
-/* Desktops, large screens (1025px - 1200px) */
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {
-  .hero {
-    display: flex;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    font-size: calc(var(--font-size) * 1);
-    flex-wrap: wrap-reverse;
+/* Touch device optimization */
+@media (hover: none) {
+  .card_letters {
+    opacity: 0.8;
   }
-}
 
-/* Extra large screens, TV (1201px and up) */
-@media only screen and (min-width: 1201px) {
-  .hero {
-    display: flex;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    font-size: calc(var(--font-size) * 1.5);
-    flex-wrap: wrap-reverse;
+  .card:active .card_letters {
+    opacity: 1;
   }
-}
-
-/* For retina screens */
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
-  /* Retina display styles */
-}
-
-/* For landscape mode */
-@media only screen and (orientation: landscape) {
-  /* Landscape styles */
-}
-
-/* For dark mode */
-@media (prefers-color-scheme: dark) {
-  /* Dark mode styles */
-}
-
-/* For users who prefer reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  /* Reduced motion styles */
 }
