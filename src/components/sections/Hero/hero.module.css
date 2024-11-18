@@ -88,7 +88,10 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  background: radial-gradient(#4a93ff, #00b9fe, #00dbec, #00f4cd, #00ffa4, #00ff75, #abff41, #ffee00);
+  background: linear-gradient(180deg, #fff, #ffffff4f);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   mix-blend-mode: darken;
   pointer-events: none;
   z-index: 3;

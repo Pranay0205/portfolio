@@ -1,0 +1,79 @@
+{
+  "experiences": [
+    {
+      "role": "Software Engineering Analyst",
+      "company": "Accenture",
+      "logo": "./src/assets/img/Accenture.png",
+      "period": "Jun 2022 – Jul 2024",
+      "location": "Bengaluru, India",
+      "projects": [
+        {
+          "name": "CloudSync",
+          "achievements": [
+            "Developed a high-performance data transfer application with .NET, React.js, and Material UI, achieving an  85% improvement in transfer times and $100,000 annual storage cost savings",
+            "Integrated RESTful APIs with parallel processing techniques, optimizing large data transfers and minimizingoperational costs",
+            "Created an intuitive UI with real-time tracking, streamlining user experience and reducing manual intervention"
+          ]
+        },
+        {
+          "name": "RMS DMT",
+          "achievements": [
+            "Developed a secure web application with React and .NET for multi-terabyte database transfers, ensuring compliance and faster processing",
+            "Designed a React-based file explorer with intuitive navigation, reducing manual operations by 40%",
+            "Built a robust testing suite with 90% coverage, lowering production incidents by 20% and eliminating data corruption"
+          ]
+        }
+      ]
+    },
+    {
+      "role": "Software Engineer Associate",
+      "company": "Accenture",
+      "logo": "./src/assets/img/Accenture.png",
+      "period": "May 2021 – Jun 2022",
+      "location": "Bengaluru, India",
+      "projects": [
+        {
+          "name": "PreprocessorWeb",
+          "achievements": [
+            "Developed an integrated web application with .NET and React, reducing maintenance costs and streamlining operations for multiple client application",
+            "Redesigned the UI using React, leading to a 30% faster information retrieval and improved usability",
+            "Conducted extensive testing, resolving integration issues and delivering a smooth user experience"
+          ]
+        }
+      ]
+    },
+    {
+      "role": "Associate Consultant Intern",
+      "company": "Capgemini",
+      "logo": "./src/assets/img/Capgemini.svg",
+      "period": "Jan 2021 – Apr 2021",
+      "location": "Hyderabad, India",
+      "projects": [
+        {
+          "name": "",
+          "achievements": [
+            "Led a team of five in completing the final project within the stipulated timeline, using Agile methodologies, task delegation, and architectural design",
+            "Created a miniature replica of the E-Trade system as the internship's final project",
+            "Designed a scalable back-end using N-Tier architecture and technologies such as .NET and MySQL, ensuringseamless data retrieval and robust system performance"
+          ]
+        }
+      ]
+    },
+    {
+      "role": "Big Data Intern",
+      "company": "Celebal Technologies",
+      "logo": "./src/assets/img/Celebal_Tech.png",
+      "period": "Feb 2020 – Jun 2020",
+      "location": "Jaipur, India",
+      "projects": [
+        {
+          "name": "",
+          "achievements": [
+            "Created an ML model for forecasting sales using Python, achieving 80% accuracy",
+            "Data Visualization using Power BI, creating interactive dashboards and reports that displayed key insights and trends for decision making"
+          ]
+        }
+      ]
+    }
+  ]
+}
