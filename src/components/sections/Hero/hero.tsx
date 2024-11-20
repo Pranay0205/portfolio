@@ -97,24 +97,22 @@ export default function Hero() {
 
           <motion.div
             className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4
-                        text-sm sm:text-base md:text-xl overflow-hidden text-gradient-white"
-            initial={{ width: "0rem" }}
-            animate={{ width: "fit-content" }}
-            style={{ width: "auto" }}
+                        text-sm sm:text-base md:text-xl overflow-hidden text-gradient-white sm:flex-wrap sm:justify-start"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
           >
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0, width: "fit-content" }}
-              transition={{ duration: 0.7 }}
+            <div
+              style={{ width: "fit-content" }}
               className="w-[200px] sm:w-[210px] md:w-[300px] flex justify-center overflow-hidden"
             >
               a Software Engineer, Found my way through
-            </motion.div>
+            </div>
             <AnimatePresence mode="wait">
               <motion.span
                 key={words[currentWordIndex]}
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0, width: "fit-content" }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{
                   duration: 0.6,
