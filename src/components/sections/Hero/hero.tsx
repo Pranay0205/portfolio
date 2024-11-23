@@ -119,7 +119,7 @@ export default function Hero() {
                   ease: "easeInOut",
                 }}
                 className="bg-gradient-custom inline-block text-transparent bg-clip-text
-                         font-bold max-sm:text-base sm:text-lg md:text-xl whitespace-nowrap"
+                         font-bold max-sm:text-base sm:text-lg md:text-xl whitespace-nowrap w-fit"
               >
                 {words[currentWordIndex]}
               </motion.span>

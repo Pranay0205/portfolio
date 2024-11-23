@@ -16,7 +16,7 @@ import Unity from "./../../../assets/logos/Unity.svg";
 import UnrealEngine from "./../../../assets/logos/Unreal_Engine.svg";
 import Materialui from "./../../../assets/logos/Material_ui.svg";
 import Postman from "./../../../assets/logos/Postman.svg";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function skills() {
   type Framework = {
@@ -27,24 +27,24 @@ export default function skills() {
   };
 
   const colorToClass = {
-    awsOrange: "shadow-orange-500/20", // AWS orange
-    azureBlue: "shadow-blue-400/20", // Azure lighter blue
-    csharpPurple: "shadow-purple-600/20", // C# purple
-    cppBlue: "shadow-blue-600/20", // C++ dark blue
-    dotnetPurple: "shadow-purple-900/20", // .NET purple
-    firebaseYellow: "shadow-amber-500/20", // Firebase warm yellow
-    githubGray: "shadow-gray-500/20", // GitHub gray
-    jsYellow: "shadow-yellow-400/20", // JavaScript yellow
-    mongoGreen: "shadow-green-500/20", // MongoDB green
-    mysqlBlue: "shadow-blue-500/20", // MySQL blue
-    oracleRed: "shadow-red-500/20", // Oracle red
-    pythonBlue: "shadow-blue-500/20", // Python blue
-    reactCyan: "shadow-cyan-400/20", // React cyan
-    tailwindCyan: "shadow-cyan-500/20", // Tailwind cyan
-    unityBlack: "shadow-neutral-600/20", // Unity dark gray
-    unrealBlue: "shadow-indigo-500/20", // Unreal Engine indigo
-    materialui: "shadow-blue-500/20", // Material UI
-    postman: "shadow-orange-600/20", // Postman
+    awsOrange: "hover:shadow-orange-500/20", // AWS orange
+    azureBlue: "hover:shadow-blue-400/20", // Azure lighter blue
+    csharpPurple: "hover:shadow-purple-600/20", // C# purple
+    cppBlue: "hover:shadow-blue-600/20", // C++ dark blue
+    dotnetPurple: "hover:shadow-purple-900/20", // .NET purple
+    firebaseYellow: "hover:shadow-amber-500/20", // Firebase warm yellow
+    githubGray: "hover:shadow-gray-500/20", // GitHub gray
+    jsYellow: "hover:shadow-yellow-400/20", // JavaScript yellow
+    mongoGreen: "hover:shadow-green-500/20", // MongoDB green
+    mysqlBlue: "hover:shadow-blue-500/20", // MySQL blue
+    oracleRed: "hover:shadow-red-500/20", // Oracle red
+    pythonBlue: "hover:shadow-blue-500/20", // Python blue
+    reactCyan: "hover:shadow-cyan-400/20", // React cyan
+    tailwindCyan: "hover:shadow-cyan-500/20", // Tailwind cyan
+    unityBlack: "hover:shadow-neutral-600/20", // Unity dark gray
+    unrealBlue: "hover:shadow-indigo-500/20", // Unreal Engine indigo
+    materialui: "hover:shadow-blue-500/20", // Material UI
+    postman: "hover:shadow-orange-600/20", // Postman
   };
 
   const glowColor = {
@@ -183,36 +183,40 @@ export default function skills() {
   return (
     <div className="h-full">
       <motion.h1
-        className="text-center font-bold text-4xl sm:text-5xl md:text-6xl text-gradient-white uppercase"
         initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ amount: "some", once: true }}
+        transition={{ duration: 0.8 }}
+        className="text-center font-bold text-4xl sm:text-5xl md:text-6xl text-gradient-white uppercase"
       >
         Skills
       </motion.h1>
-      <div className="w-full  max-w-max mx-auto px-8 my-40 ">
-        <div className="grid grid-flow-row gap-4 md:gap-8 m-10 grid-cols-10 ">
+      <div className="w-full max-w-max mx-auto px-8 my-40">
+        <div className="grid grid-flow-row gap-4 md:gap-8 m-10 lg:grid-cols-10 md:grid-cols-6 sm:gird-cols-2 max-sm:gird-cols-2">
           {frameworks.map((framework, index) => (
-            <motion.div
-              key={framework.id}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.09 * index }}
-              className={`aspect-square rounded-xl bg-gray-900/50 border-cyan-400 p-4 flex items-center justify-center transition-shadow duration-500 shadow-none hover:shadow-xl backdrop-blur-lg backdrop-saturate-100 hover:${colorToClass[framework.color]}`}
-            >
-              {framework && (
-                <div className={`w-full h-full rounded-xl flex items-center justify-center`}>
-                  <img
-                    src={framework.src}
-                    alt={framework.alt}
-                    className="w-12 h-12 md:w-16 md:h-16"
-                    style={{
-                      filter: `drop-shadow(0 0 0.8rem color-mix(in srgb, ${glowColor[framework.color]} 50%, transparent))`,
-                    }}
-                  />
-                </div>
-              )}
-            </motion.div>
+            <AnimatePresence key={framework.id} mode="wait">
+              <motion.div
+                key={framework.id}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ amount: "some", once: true }}
+                transition={{ duration: 0.5, delay: 0.04 * index }}
+                className={`aspect-square rounded-xl bg-gray-900/50 border-cyan-400 p-4 flex items-center justify-center transition-shadow duration-500 shadow-none backdrop-blur-lg backdrop-saturate-100 hover:shadow-xl ${colorToClass[framework.color]} max-sm:w-full max-sm:h-full`}
+              >
+                {framework && (
+                  <div className={`w-full h-full rounded-xl flex items-center justify-center `}>
+                    <img
+                      src={framework.src}
+                      alt={framework.alt}
+                      className="w-full h-full max-w-[120px] max-h-[120px] object-contain"
+                      style={{
+                        filter: `drop-shadow(0 0 0.8rem color-mix(in srgb, ${glowColor[framework.color]} 50%, transparent))`,
+                      }}
+                    />
+                  </div>
+                )}
+              </motion.div>
+            </AnimatePresence>
           ))}
         </div>
       </div>
