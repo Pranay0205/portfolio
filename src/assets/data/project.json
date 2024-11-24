@@ -1,0 +1,58 @@
+{
+  "projects": [
+    {
+      "name": "GPU Architecture Performance Analysis",
+      "organization": "Umass Dartmouth",
+      "tech_stack": ["Python", "NVIDIA CUDA", "NVIDIA API", "Unity Engine", "Unreal Engine", "DirectX 12", "RenderDoc"],
+      "achievements": [
+        "Developed a Python-based monitoring system to evaluate GPU performance across NVIDIA architectures, tracking metrics like TFLOPS and memory bandwidth",
+        "Conducted benchmarking of DirectX 12 API on RTX 3000/4000 series GPUs, improving understanding of architectural impacts on performance",
+        "Utilized NVIDIA NSight and RenderDoc for deep-dive analysis of graphics API calls, memory access patterns, and shader program execution efficiency"
+      ],
+      "link": "https://github.com/Pranay0205/gpu-cuda-performance-profiler",
+      "date": "Nov 2024",
+      "location": "Dartmouth, USA"
+    },
+    {
+      "name": "Real-time Weather Analytics Platform",
+      "organization": "Umass Dartmouth",
+      "tech_stack": ["Python", "AWS", "REST APIs"],
+      "achievements": [
+        "Built a serverless pipeline on AWS Lambda for ingesting hourly weather data across 14 regions, enabling automated, real-time analysis of weather patterns",
+        "Structured S3 storage and CSV processing for efficient querying, reducing data retrieval time by 30%",
+        "Designed a real-time weather dashboard with automated alerts and interactive visualizations, used to inform responses to weather changes across climate zones"
+      ],
+      "link": "https://github.com/Pranay0205/realtime-weather-data-analysis",
+      "img": "src/assets/project_snapshots/Dashboard.png",
+      "date": "Nov 2024",
+      "location": "Dartmouth, USA"
+    },
+    {
+      "name": "Ocular Eye Disease Detection",
+      "organization": "Freelancing",
+      "tech_stack": ["Python", "Tensorflow", "CNN"],
+      "achievements": [
+        "Desinged and Developed Shadow-interiors, a website for an interior design company, using React and Firebase",
+        "Crafted a clean and modern design that increased the online presence and brand awareness of the company",
+        "Deployed the website to Firebase Hosting, enhancing the performance, security, and scalability of the website"
+      ],
+      "link": "https://github.com/Pranay0205/shadow-interiors",
+      "date": "Apr 2022",
+      "location": "Pune, India"
+    },
+    {
+      "name": "Shadow-interiors Website",
+      "organization": "Freelancing",
+      "tech_stack": ["React", "Firebase"],
+      "achievements": [
+        "Desinged and Developed Shadow-interiors, a website for an interior design company, using React and Firebase",
+        "Crafted a clean and modern design that increased the online presence and brand awareness of the company",
+        "Deployed the website to Firebase Hosting, enhancing the performance, security, and scalability of the website"
+      ],
+      "link": "https://github.com/Pranay0205/shadow-interiors",
+      "img": "src/assets/project_snapshots/Shadow_Interiors.png",
+      "date": "Apr 2022",
+      "location": "Pune, India"
+    }
+  ]
+}

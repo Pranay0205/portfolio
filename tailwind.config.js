@@ -30,6 +30,11 @@ export default {
           "-webkit-background-clip": "text",
           "-webkit-text-fill-color": "transparent",
         },
+        ".text-chip-primary": {
+          background: "linear-gradient(125deg, #10b981, #8b5cf6, #ef4444)",
+          padding: "0.5rem 0.5rem",
+          borderRadius: "1rem",
+        },
       });
     }),
   ],
