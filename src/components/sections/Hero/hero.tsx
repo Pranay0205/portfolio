@@ -74,10 +74,10 @@ export default function Hero() {
 
   return (
     <section>
-      <div className="grid grid-cols-2 max-sm:grid-cols-1 max-sm:text-xs sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 md:gap-2 place-items-center w-screen h-screen p-4 md:p-8 text-base sm:text-sm md:text-lg lg:text-xl">
+      <div className="grid grid-cols-2 max-sm:grid-cols-1 max-sm:text-xs sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 md:gap-2 max-sm:gap-0 place-items-center w-screen h-screen p-4 md:p-8 text-base sm:text-sm md:text-lg lg:text-xl">
         <div className="font-bold text-center sm:text-left max-w-2xl">
           <motion.p
-            className="mb-4 sm:mb-8 text-xs sm:text-sm md:text-lg p-0 text-gradient-white"
+            className="mb-4 sm:mb-8 text-xs max-sm:text-sm sm:text-md md:text-lg p-0 text-gradient-white max-sm:mb-0"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}

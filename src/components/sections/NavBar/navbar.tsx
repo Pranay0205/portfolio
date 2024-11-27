@@ -1,4 +1,4 @@
-import personalLogo from "../../../assets/logos/Logo_bg.png";
+import personalLogo from "../../../assets/img/Logo_bg.png";
 import { RxDownload } from "react-icons/rx";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
@@ -45,12 +45,16 @@ export default function NavBar() {
         stiffness: 100,
         damping: 20,
       }}
-      className="bg-gray-900/50 rounded-3xl m-4 my-2 origin-center"
+      className="bg-gray-900/50 rounded-xl mt-4 p-2 origin-center"
     >
-      <div className="flex justify-between mx-auto px-12">
-        <img src={personalLogo} className="w-24 h-24" alt="Logo_With_Animation" />
+      <div className="flex justify-between mx-auto px-12 max-sm:px-2">
+        <img
+          src={personalLogo}
+          className="w-fit h-16 p-2 max-sm:p-0 max-sm:h-8 max-sm:self-center"
+          alt="Logo_With_Animation"
+        />
         <button
-          className="relative inline-flex h-12 w-72 items-center justify-center self-center rounded-xl bg-zinc-200 px-10 font-medium uppercase max-sm:w-10"
+          className="relative inline-flex h-12 w-72 items-center justify-center self-center rounded-xl bg-zinc-200 px-10 font-medium uppercase max-sm:w-10 max-sm:px-15"
           onClick={() => handledownloadClick()}
         >
           <AnimatePresence mode="wait">
