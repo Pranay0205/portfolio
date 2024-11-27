@@ -16,7 +16,7 @@
     {
       "name": "Real-time Weather Analytics Platform",
       "organization": "Umass Dartmouth",
-      "tech_stack": ["Python", "AWS", "REST APIs"],
+      "tech_stack": ["Python", "Lambda Functions", "QuickSight", "REST APIs"],
       "achievements": [
         "Built a serverless pipeline on AWS Lambda for ingesting hourly weather data across 14 regions, enabling automated, real-time analysis of weather patterns",
         "Structured S3 storage and CSV processing for efficient querying, reducing data retrieval time by 30%",
@@ -36,7 +36,7 @@
         "Crafted a clean and modern design that increased the online presence and brand awareness of the company",
         "Deployed the website to Firebase Hosting, enhancing the performance, security, and scalability of the website"
       ],
-      "link": "https://github.com/Pranay0205/shadow-interiors",
+      "link": "https://github.com/Pranay0205/ocular_eye_disease_detection",
       "date": "Apr 2022",
       "location": "Pune, India"
     },

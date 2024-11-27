@@ -77,7 +77,7 @@ export default function Hero() {
       <div className="grid grid-cols-2 max-sm:grid-cols-1 max-sm:text-xs sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 md:gap-2 place-items-center w-screen h-screen p-4 md:p-8 text-base sm:text-sm md:text-lg lg:text-xl">
         <div className="font-bold text-center sm:text-left max-w-2xl">
           <motion.p
-            className="mb-4 sm:mb-8 text-xs sm:text-sm md:text-lg m-0 p-0 text-gradient-white"
+            className="mb-4 sm:mb-8 text-xs sm:text-sm md:text-lg p-0 text-gradient-white"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -85,9 +85,7 @@ export default function Hero() {
             Hi, my name is{" "}
           </motion.p>
           <motion.h1
-            className="mb-4 sm:mb-8 
-                     text-4xl sm:text-5xl md:text-8xl 
-                     max-sm:leading-tight text-gradient-white"
+            className="mb-4 sm:mb-8 text-4xl sm:text-5xl md:text-8xl max-sm:leading-tight text-gradient-white"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
@@ -136,7 +134,12 @@ export default function Hero() {
             to build something amazing
           </motion.p>
         </div>
-        <div className={[classes.card_wrapper, "max-sm:w-full max-sm:max-w-md"].join(" ")}>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className={[classes.card_wrapper, "max-sm:w-full max-sm:max-w-md"].join(" ")}
+        >
           <div
             className={classes.card}
             onMouseMove={(e) => handleOnMouseMove(e)}
@@ -155,7 +158,7 @@ export default function Hero() {
               {binaryString}
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

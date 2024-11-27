@@ -16,6 +16,8 @@ import Unity from "./../../../assets/logos/Unity.svg";
 import UnrealEngine from "./../../../assets/logos/Unreal_Engine.svg";
 import Materialui from "./../../../assets/logos/Material_ui.svg";
 import Postman from "./../../../assets/logos/Postman.svg";
+import Tensorflow from "./../../../assets/logos/Tensorflow.svg";
+import NvidiaCuda from "./../../../assets/logos/NvidiaCuda.svg";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function skills() {
@@ -38,34 +40,38 @@ export default function skills() {
     mongoGreen: "hover:shadow-green-500/20", // MongoDB green
     mysqlBlue: "hover:shadow-blue-500/20", // MySQL blue
     oracleRed: "hover:shadow-red-500/20", // Oracle red
-    pythonBlue: "hover:shadow-blue-500/20", // Python blue
+    pythonBlue: "hover:shadow-blue-400/20", // Python blue
     reactCyan: "hover:shadow-cyan-400/20", // React cyan
     tailwindCyan: "hover:shadow-cyan-500/20", // Tailwind cyan
     unityBlack: "hover:shadow-neutral-600/20", // Unity dark gray
     unrealBlue: "hover:shadow-indigo-500/20", // Unreal Engine indigo
     materialui: "hover:shadow-blue-500/20", // Material UI
     postman: "hover:shadow-orange-600/20", // Postman
+    tensorflow: "hover:shadow-yellow-600/20", // Tensorflow
+    nvidiacuda: "hover:shadow-green-600/20", // NvidiaCuda
   };
 
   const glowColor = {
     awsOrange: "orange", // AWS orange
     azureBlue: "blue", // Azure lighter blue
-    csharpPurple: "purple", // C# purple
-    cppBlue: "blue", // C++ dark blue
-    dotnetPurple: "purple", // .NET purple
+    csharpPurple: "#9B4993", // C# purple
+    cppBlue: "skyblue", // C++ dark blue
+    dotnetPurple: "#9B4993", // .NET purple
     firebaseYellow: "amber", // Firebase warm yellow
     githubGray: "gray", // GitHub gray
     jsYellow: "yellow", // JavaScript yellow
     mongoGreen: "green", // MongoDB green
     mysqlBlue: "blue", // MySQL blue
     oracleRed: "red", // Oracle red
-    pythonBlue: "blue", // Python blue
+    pythonBlue: "skyblue", // Python blue
     reactCyan: "cyan", // React cyan
     tailwindCyan: "cyan", // Tailwind cyan
-    unityBlack: "neutral", // Unity dark gray
+    unityBlack: "white", // Unity dark gray
     unrealBlue: "indigo", // Unreal Engine indigo
     materialui: "blue", // Material UI
     postman: "orange", // Postman
+    tensorflow: "yellow", // Tensorflow
+    nvidiacuda: "green", // Nvidia Cuda
   };
 
   const frameworks: Framework[] = [
@@ -88,10 +94,16 @@ export default function skills() {
       color: "jsYellow",
     },
     {
-      id: "materialui",
-      src: Materialui,
-      alt: "Material UI",
-      color: "materialui",
+      id: "csharp",
+      src: CSharp,
+      alt: "C Sharp",
+      color: "csharpPurple",
+    },
+    {
+      id: "cpp",
+      src: Cpp,
+      alt: "C++",
+      color: "cppBlue",
     },
     {
       id: "dotnetcore",
@@ -106,22 +118,10 @@ export default function skills() {
       color: "pythonBlue",
     },
     {
-      id: "csharp",
-      src: CSharp,
-      alt: "C Sharp",
-      color: "csharpPurple",
-    },
-    {
-      id: "cpp",
-      src: Cpp,
-      alt: "C++",
-      color: "cppBlue",
-    },
-    {
-      id: "postman",
-      src: Postman,
-      alt: "Postman",
-      color: "postman",
+      id: "tensorflow",
+      src: Tensorflow,
+      alt: "Tensor Flow",
+      color: "tensorflow",
     },
     {
       id: "aws",
@@ -136,23 +136,10 @@ export default function skills() {
       color: "azureBlue",
     },
     {
-      id: "firebase",
-      src: Firebase,
-      alt: "Firebase",
-      color: "firebaseYellow",
-    },
-    {
-      id: "github",
-      src: Github,
-      alt: "GitHub",
-      color: "githubGray",
-    },
-
-    {
-      id: "mongodb",
-      src: MongoDB,
-      alt: "MongoDB",
-      color: "mongoGreen",
+      id: "materialui",
+      src: Materialui,
+      alt: "Material UI",
+      color: "materialui",
     },
     {
       id: "mysql",
@@ -165,6 +152,36 @@ export default function skills() {
       src: Oracle,
       alt: "Oracle",
       color: "oracleRed",
+    },
+    {
+      id: "firebase",
+      src: Firebase,
+      alt: "Firebase",
+      color: "firebaseYellow",
+    },
+    {
+      id: "postman",
+      src: Postman,
+      alt: "Postman",
+      color: "postman",
+    },
+    {
+      id: "github",
+      src: Github,
+      alt: "GitHub",
+      color: "githubGray",
+    },
+    {
+      id: "mongodb",
+      src: MongoDB,
+      alt: "MongoDB",
+      color: "mongoGreen",
+    },
+    {
+      id: "nvidiacuda",
+      src: NvidiaCuda,
+      alt: "NvidiaCuda",
+      color: "nvidiacuda",
     },
     {
       id: "unity",
@@ -201,7 +218,7 @@ export default function skills() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ amount: "some", once: true }}
                 transition={{ duration: 0.5, delay: 0.04 * index }}
-                className={`aspect-square rounded-xl bg-gray-900/50 border-cyan-400 p-4 flex items-center justify-center transition-shadow duration-500 shadow-none backdrop-blur-lg backdrop-saturate-100 hover:shadow-xl ${colorToClass[framework.color]} max-sm:w-full max-sm:h-full`}
+                className={`aspect-square rounded-xl bg-gray-900/50 border-cyan-400 p-4 flex items-center justify-center transition-shadow duration-500 shadow-none backdrop-blur-lg backdrop-saturate-100 hover:shadow-xl ${colorToClass[framework.color]} hover:cursor-pointer max-sm:w-full max-sm:h-full`}
               >
                 {framework && (
                   <div className={`w-full h-full rounded-xl flex items-center justify-center `}>

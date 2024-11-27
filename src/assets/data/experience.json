@@ -3,7 +3,7 @@
     {
       "role": "Software Engineering Analyst",
       "company": "Accenture",
-      "logo": "./src/assets/img/Accenture.png",
+      "logo": "./src/assets/img/companies/Accenture.png",
       "period": "Jun 2022 – Jul 2024",
       "location": "Bengaluru, India",
       "projects": [
@@ -28,7 +28,7 @@
     {
       "role": "Software Engineer Associate",
       "company": "Accenture",
-      "logo": "./src/assets/img/Accenture.png",
+      "logo": "./src/assets/img/companies/Accenture.png",
       "period": "May 2021 – Jun 2022",
       "location": "Bengaluru, India",
       "projects": [
@@ -45,7 +45,7 @@
     {
       "role": "Associate Consultant Intern",
       "company": "Capgemini",
-      "logo": "./src/assets/img/Capgemini.svg",
+      "logo": "./src/assets/img/companies/Capgemini.png",
       "period": "Jan 2021 – Apr 2021",
       "location": "Hyderabad, India",
       "projects": [
@@ -62,7 +62,7 @@
     {
       "role": "Big Data Intern",
       "company": "Celebal Technologies",
-      "logo": "./src/assets/img/Celebal_Tech.png",
+      "logo": "./src/assets/img/companies/CelebalTech.png",
       "period": "Feb 2020 – Jun 2020",
       "location": "Jaipur, India",
       "projects": [
