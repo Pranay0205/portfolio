@@ -19,7 +19,7 @@ export default function Project() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ amount: "some", once: true }}
               transition={{ duration: 0.8 }}
-              className="relative inset-0 h-full rounded-3xl border border-gray-800 bg-gray-900/50 bg-gradient-to-tl from-black/80 via-transparent to-transparent p-10 max-sm:m-4 max-sm:w-[22rem] sm:w-[30rem] md:w-[50rem] lg:w-[60rem]"
+              className="relative inset-0 h-full w-fit rounded-3xl border border-gray-800 bg-gray-900/50 bg-gradient-to-tl from-black/80 via-transparent to-transparent p-10 max-sm:m-4 max-sm:w-fit sm:w-[30rem] md:w-[50rem] lg:w-[60rem]"
             >
               <h2 className="mb-4 flex gap-4 text-4xl font-bold text-gradient-white">
                 {project.name}

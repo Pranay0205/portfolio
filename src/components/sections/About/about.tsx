@@ -1,5 +1,32 @@
 import { motion } from "framer-motion";
 import SectionHeading from "../ui/sectionheadings";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { IconType } from "react-icons";
+
+interface SocialIcon {
+  icon: IconType;
+  href: string;
+  hoverColor?: string;
+}
+
+const socialIcons: SocialIcon[] = [
+  {
+    icon: FaInstagram,
+    href: "https://www.instagram.com/pranayghuge/",
+    hoverColor: "hover:text-pink-500",
+  },
+  {
+    icon: FaXTwitter,
+    href: "https://x.com/PranayGhuge2/",
+    hoverColor: "hover:text-gray-400",
+  },
+  {
+    icon: FaLinkedin,
+    href: "https://www.linkedin.com/in/pranay-ghuge-2a4a75137/",
+    hoverColor: "hover:text-blue-600",
+  },
+];
 
 const GradientText = ({ children }: { children: React.ReactNode }) => (
   <motion.span
@@ -55,6 +82,22 @@ export default function About() {
           </TextContent>
           <GradientText>simple, effective solutions.</GradientText>
         </p>
+      </div>
+      <div className="flex gap-8 self-center">
+        {socialIcons.map((social, index) => {
+          const Icon = social.icon;
+          return (
+            <a
+              key={index + social.href}
+              href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`h-12 w-12 ${social.hoverColor} transition-colors duration-200 max-sm:h-8 max-sm:w-8`}
+            >
+              <Icon className="h-full w-full" />
+            </a>
+          );
+        })}
       </div>
     </section>
   );

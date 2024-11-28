@@ -58,16 +58,16 @@ export default function NavBar() {
         stiffness: 100,
         damping: 20,
       }}
-      className="bg-gray-900/50 rounded-xl mt-4 p-2 origin-center"
+      className="mt-4 origin-center rounded-xl bg-gray-900/50 p-2"
     >
-      <div className="flex justify-between mx-auto px-12 max-sm:px-2">
+      <div className="mx-auto flex justify-between px-12 max-sm:px-2">
         <img
           src={personalLogo}
-          className="w-fit h-16 p-2 max-sm:p-0 max-sm:h-8 max-sm:self-center"
+          className="h-16 w-auto object-contain p-2 max-sm:h-8 max-sm:self-center max-sm:p-0"
           alt="Logo_With_Animation"
         />
         <button
-          className="relative inline-flex h-12 w-72 items-center justify-center self-center rounded-xl bg-zinc-200 px-10 font-medium uppercase max-sm:w-10 max-sm:px-15"
+          className="max-sm:px-15 relative inline-flex h-12 w-72 items-center justify-center self-center rounded-xl bg-zinc-200 px-10 font-medium uppercase max-sm:w-10"
           onClick={() => handledownloadClick()}
         >
           <AnimatePresence mode="wait">
@@ -79,10 +79,10 @@ export default function NavBar() {
                 transition={{ duration: 0.2 }}
                 className="flex"
               >
-                <span className="bg-gradient-custom text-transparent bg-clip-text max-sm:hidden">
+                <span className="bg-gradient-custom bg-clip-text text-transparent max-sm:hidden">
                   Download Resume
                 </span>
-                <RxDownload className="text-accent size-4 ml-1 inline-block self-center max-sm:m-0 max-sm:size-6" />
+                <RxDownload className="ml-1 inline-block size-4 self-center text-accent max-sm:m-0 max-sm:size-6" />
               </motion.div>
             ) : (
               <motion.span
@@ -92,7 +92,7 @@ export default function NavBar() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 1, y: -20 }}
                 transition={{ duration: 0.2 }}
-                className="bg-gradient-custom text-transparent bg-clip-text max-sm:w-12"
+                className="bg-gradient-custom bg-clip-text text-transparent max-sm:w-12"
               >
                 {binaryText}
               </motion.span>
