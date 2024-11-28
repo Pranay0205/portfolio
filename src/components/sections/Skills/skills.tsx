@@ -1,4 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
+import SectionHeading from "../ui/sectionheadings";
 
 export default function skills() {
   type Framework = {
@@ -179,17 +180,9 @@ export default function skills() {
 
   return (
     <div className="h-full">
-      <motion.h1
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ amount: "some", once: true }}
-        transition={{ duration: 0.8 }}
-        className="text-center font-bold max-sm:text-5xl sm:text-5xl md:text-6xl lg:text-7xl text-gradient-white uppercase"
-      >
-        TECH ARSENAL
-      </motion.h1>
-      <div className="w-full max-w-max mx-auto px-8 my-40">
-        <div className="grid grid-flow-row gap-4 md:gap-8 m-10 lg:grid-cols-10 md:grid-cols-6 sm:gird-cols-2 max-sm:gird-cols-2">
+      <SectionHeading>TECH ARSENAL</SectionHeading>
+      <div className="mx-auto my-20 w-full max-w-max px-8">
+        <div className="sm:gird-cols-2 m-10 grid grid-flow-row gap-4 max-sm:grid-cols-2 md:grid-cols-6 md:gap-8 lg:grid-cols-10">
           {frameworks.map((framework, index) => (
             <AnimatePresence key={framework.id} mode="wait">
               <motion.div
@@ -198,16 +191,16 @@ export default function skills() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ amount: "some", once: true }}
                 transition={{ duration: 0.5, delay: 0.04 * index }}
-                className={`aspect-square rounded-xl bg-gray-900/50 border-cyan-400 p-4 flex items-center justify-center transition-shadow duration-500 shadow-none backdrop-blur-lg backdrop-saturate-100 hover:shadow-xl ${colorToClass[framework.color]} hover:cursor-pointer max-sm:w-full max-sm:h-full`}
+                className={`flex aspect-square items-center justify-center rounded-xl border-cyan-400 bg-gray-900/50 p-4 shadow-none backdrop-blur-lg backdrop-saturate-100 transition-shadow duration-500 hover:shadow-xl ${colorToClass[framework.color]} hover:cursor-pointer max-sm:h-full max-sm:w-full`}
               >
                 {framework && (
                   <div
-                    className={`w-full h-full rounded-xl flex items-center justify-center `}
+                    className={`flex h-full w-full items-center justify-center rounded-xl`}
                   >
                     <img
                       src={framework.src}
                       alt={framework.alt}
-                      className="w-full h-full max-w-[120px] max-h-[120px] object-contain"
+                      className="h-full max-h-[120px] w-full max-w-[120px] object-contain"
                       style={{
                         filter: `drop-shadow(0 0 0.8rem color-mix(in srgb, ${glowColor[framework.color]} 50%, transparent))`,
                       }}

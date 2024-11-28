@@ -20,16 +20,17 @@ export default {
   plugins: [
     plugin(function ({ addUtilities }) {
       addUtilities({
+        ".text-gradient-primary": {
+          background: "linear-gradient(75deg, #10b981, #8b5cf6, #ef4444)",
+          "-webkit-background-clip": "text",
+          "-webkit-text-fill-color": "transparent",
+        },
         ".text-gradient-white": {
           background: "linear-gradient(180deg, #fff, #ffffff4f)",
           "-webkit-background-clip": "text",
           "-webkit-text-fill-color": "transparent",
         },
-        ".text-gradient-primary": {
-          background: "linear-gradient(180deg, #10b981, #8b5cf6, #ef4444)",
-          "-webkit-background-clip": "text",
-          "-webkit-text-fill-color": "transparent",
-        },
+
         ".text-chip-primary": {
           background: "linear-gradient(125deg, #10b981, #8b5cf6, #ef4444)",
           padding: "0.5rem 0.5rem",

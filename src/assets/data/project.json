@@ -3,7 +3,15 @@
     {
       "name": "GPU Architecture Performance Analysis",
       "organization": "Umass Dartmouth",
-      "tech_stack": ["Python", "NVIDIA CUDA", "NVIDIA API", "Unity Engine", "Unreal Engine", "DirectX 12", "RenderDoc"],
+      "tech_stack": [
+        "Python",
+        "NVIDIA CUDA",
+        "NVIDIA API",
+        "Unity Engine",
+        "Unreal Engine",
+        "DirectX 12",
+        "RenderDoc"
+      ],
       "achievements": [
         "Developed a Python-based monitoring system to evaluate GPU performance across NVIDIA architectures, tracking metrics like TFLOPS and memory bandwidth",
         "Conducted benchmarking of DirectX 12 API on RTX 3000/4000 series GPUs, improving understanding of architectural impacts on performance",
@@ -32,9 +40,11 @@
       "organization": "Freelancing",
       "tech_stack": ["Python", "Tensorflow", "CNN"],
       "achievements": [
-        "Desinged and Developed Shadow-interiors, a website for an interior design company, using React and Firebase",
-        "Crafted a clean and modern design that increased the online presence and brand awareness of the company",
-        "Deployed the website to Firebase Hosting, enhancing the performance, security, and scalability of the website"
+        "Developed an AI-powered medical imaging system using TensorFlow and OpenCV that processes 5000+ retinal images to detect 8 distinct ocular diseases with 86% accuracy",
+        "Implemented transfer learning with EfficientNetB0 and ResNet50 models, optimizing the classification system for medical image analysis and disease detection",
+        "Built comprehensive data pipelines using OpenCV and Albumentations for image preprocessing, increasing model generalization and reducing overfitting",
+        "Engineered interactive medical visualization dashboards using Plotly and Seaborn, enabling clear analysis of disease patterns across patient demographics",
+        "Applied K-means clustering and PCA techniques for advanced pattern recognition in retinal images, enhancing feature extraction capabilities for disease classification"
       ],
       "link": "https://github.com/Pranay0205/ocular_eye_disease_detection",
       "date": "Apr 2022",
