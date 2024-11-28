@@ -1,5 +1,6 @@
 import { FaQuoteLeft } from "react-icons/fa";
 import SectionHeading from "../ui/sectionheadings";
+import { motion } from "framer-motion";
 
 export default function Testimonials() {
   const testimonials = [
@@ -17,12 +18,16 @@ export default function Testimonials() {
 
   return (
     <section>
+      <SectionHeading>Word On Street</SectionHeading>
       <div className="m-20 px-4 max-sm:m-2 sm:m-4 md:m-8">
-        <SectionHeading>Word On Street</SectionHeading>
         <div className="mx-auto mt-20 grid max-w-fit gap-8 max-sm:grid-cols-1 md:grid-cols-2">
           {testimonials.map((testimonial, index) => (
-            <div
-              key={index}
+            <motion.div
+              initial={{ opacity: 0, y: 80 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ amount: "some" }}
+              transition={{ duration: 0.9 }}
+              key={index + testimonial.role}
               className="overflow-show group relative cursor-pointer rounded-xl border border-gray-800 p-10"
             >
               <div className="absolute inset-0 rounded-xl bg-gray-900/50 backdrop-blur-sm transition-opacity duration-300 group-hover:opacity-0" />
@@ -39,7 +44,7 @@ export default function Testimonials() {
                   <div className="text-gray-400">via {testimonial.source}</div>
                 </footer>
               </blockquote>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
