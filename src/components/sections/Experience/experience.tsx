@@ -12,9 +12,9 @@ export default function Experience() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ amount: "some", once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center font-bold text-4xl sm:text-5xl md:text-6xl text-gradient-white uppercase"
+          className="text-center font-bold lg:text-7xl sm:text-5xl md:text-6xl text-gradient-white uppercase"
         >
-          Professional Experience
+          Experience Log
         </motion.h2>
         <div className="relative w-1/2 self-center m-36 max-sm:w-full">
           {/* Timeline line */}

@@ -14,9 +14,9 @@ export default function Project() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ amount: "some", once: true }}
           transition={{ duration: 0.5 }}
-          className="text-center font-bold text-4xl sm:text-5xl md:text-6xl text-gradient-white uppercase block m-8"
+          className="text-center font-bold lg:text-7xl sm:text-5xl md:text-6xl text-gradient-white uppercase block m-8"
         >
-          Projects
+          Side Quests
         </motion.h2>
         <div className="grid grid-cols-1 gap-20 justify-items-center p-8">
           {projects.map((project) => (

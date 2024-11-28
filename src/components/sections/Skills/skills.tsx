@@ -204,9 +204,9 @@ export default function skills() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ amount: "some", once: true }}
         transition={{ duration: 0.8 }}
-        className="text-center font-bold text-4xl sm:text-5xl md:text-6xl text-gradient-white uppercase"
+        className="text-center font-bold lg:text-7xl sm:text-5xl md:text-6xl text-gradient-white uppercase"
       >
-        Skills
+        TECH ARSENAL
       </motion.h1>
       <div className="w-full max-w-max mx-auto px-8 my-40">
         <div className="grid grid-flow-row gap-4 md:gap-8 m-10 lg:grid-cols-10 md:grid-cols-6 sm:gird-cols-2 max-sm:gird-cols-2">
