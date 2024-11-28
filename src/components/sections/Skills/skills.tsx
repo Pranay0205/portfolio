@@ -1,23 +1,3 @@
-import Aws from "./../../../assets/logos/Aws.svg";
-import Azure from "./../../../assets/logos/Azure.svg";
-import CSharp from "./../../../assets/logos/C_Sharp.svg";
-import Cpp from "./../../../assets/logos/Cpp.svg";
-import DotNetCore from "./../../../assets/logos/Dot_Net_Core.svg";
-import Firebase from "./../../../assets/logos/Firebase.svg";
-import Github from "./../../../assets/logos/GitHub.svg";
-import JavaScript from "./../../../assets/logos/JavaScipt.svg";
-import MongoDB from "./../../../assets/logos/Mongodb.svg";
-import MySQL from "./../../../assets/logos/MySQL.svg";
-import Oracle from "./../../../assets/logos/Oracle.svg";
-import Python from "./../../../assets/logos/Python.svg";
-import React from "./../../../assets/logos/React.svg";
-import Tailwind from "./../../../assets/logos/Tailwind.svg";
-import Unity from "./../../../assets/logos/Unity.svg";
-import UnrealEngine from "./../../../assets/logos/Unreal_Engine.svg";
-import Materialui from "./../../../assets/logos/Material_ui.svg";
-import Postman from "./../../../assets/logos/Postman.svg";
-import Tensorflow from "./../../../assets/logos/Tensorflow.svg";
-import NvidiaCuda from "./../../../assets/logos/NvidiaCuda.svg";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function skills() {
@@ -77,121 +57,121 @@ export default function skills() {
   const frameworks: Framework[] = [
     {
       id: "react",
-      src: React,
+      src: "/logos/React.svg",
       alt: "React",
       color: "reactCyan",
     },
     {
       id: "tailwind",
-      src: Tailwind,
+      src: "/logos/Tailwind.svg",
       alt: "Tailwind CSS",
       color: "tailwindCyan",
     },
     {
       id: "javascript",
-      src: JavaScript,
+      src: "/logos/JavaScipt.svg",
       alt: "JavaScript",
       color: "jsYellow",
     },
     {
       id: "csharp",
-      src: CSharp,
+      src: "/logos/C_Sharp.svg",
       alt: "C Sharp",
       color: "csharpPurple",
     },
     {
       id: "cpp",
-      src: Cpp,
+      src: "/logos/Cpp.svg",
       alt: "C++",
       color: "cppBlue",
     },
     {
       id: "dotnetcore",
-      src: DotNetCore,
+      src: "/logos/Dot_Net_Core.svg",
       alt: ".NET Core",
       color: "dotnetPurple",
     },
     {
       id: "python",
-      src: Python,
+      src: "/logos/Python.svg",
       alt: "Python",
       color: "pythonBlue",
     },
     {
       id: "tensorflow",
-      src: Tensorflow,
+      src: "/logos/Tensorflow.svg",
       alt: "Tensor Flow",
       color: "tensorflow",
     },
     {
       id: "aws",
-      src: Aws,
+      src: "/logos/Aws.svg",
       alt: "Amazon Web Services",
       color: "awsOrange",
     },
     {
       id: "azure",
-      src: Azure,
+      src: "/logos/Azure.svg",
       alt: "Microsoft Azure",
       color: "azureBlue",
     },
     {
       id: "materialui",
-      src: Materialui,
+      src: "/logos/Material_ui.svg",
       alt: "Material UI",
       color: "materialui",
     },
     {
       id: "mysql",
-      src: MySQL,
+      src: "/logos/MySQL.svg",
       alt: "MySQL",
       color: "mysqlBlue",
     },
     {
       id: "oracle",
-      src: Oracle,
+      src: "/logos/Oracle.svg",
       alt: "Oracle",
       color: "oracleRed",
     },
     {
       id: "firebase",
-      src: Firebase,
+      src: "/logos/Firebase.svg",
       alt: "Firebase",
       color: "firebaseYellow",
     },
     {
       id: "postman",
-      src: Postman,
+      src: "/logos/Postman.svg",
       alt: "Postman",
       color: "postman",
     },
     {
       id: "github",
-      src: Github,
+      src: "/logos/GitHub.svg",
       alt: "GitHub",
       color: "githubGray",
     },
     {
       id: "mongodb",
-      src: MongoDB,
+      src: "/logos/Mongodb.svg",
       alt: "MongoDB",
       color: "mongoGreen",
     },
     {
       id: "nvidiacuda",
-      src: NvidiaCuda,
+      src: "/logos/NvidiaCuda.svg",
       alt: "NvidiaCuda",
       color: "nvidiacuda",
     },
     {
       id: "unity",
-      src: Unity,
+      src: "/logos/Unity.svg",
       alt: "Unity",
       color: "unityBlack",
     },
     {
       id: "unrealengine",
-      src: UnrealEngine,
+      src: "/logos/Unreal_Engine.svg",
       alt: "Unreal Engine",
       color: "unrealBlue",
     },
@@ -204,7 +184,7 @@ export default function skills() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ amount: "some", once: true }}
         transition={{ duration: 0.8 }}
-        className="text-center font-bold lg:text-7xl sm:text-5xl md:text-6xl text-gradient-white uppercase"
+        className="text-center font-bold max-sm:text-5xl sm:text-5xl md:text-6xl lg:text-7xl text-gradient-white uppercase"
       >
         TECH ARSENAL
       </motion.h1>
@@ -221,7 +201,9 @@ export default function skills() {
                 className={`aspect-square rounded-xl bg-gray-900/50 border-cyan-400 p-4 flex items-center justify-center transition-shadow duration-500 shadow-none backdrop-blur-lg backdrop-saturate-100 hover:shadow-xl ${colorToClass[framework.color]} hover:cursor-pointer max-sm:w-full max-sm:h-full`}
               >
                 {framework && (
-                  <div className={`w-full h-full rounded-xl flex items-center justify-center `}>
+                  <div
+                    className={`w-full h-full rounded-xl flex items-center justify-center `}
+                  >
                     <img
                       src={framework.src}
                       alt={framework.alt}

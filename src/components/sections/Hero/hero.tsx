@@ -74,10 +74,10 @@ export default function Hero() {
 
   return (
     <section>
-      <div className="grid grid-cols-2 max-sm:grid-cols-1 max-sm:text-xs sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 md:gap-2 max-sm:gap-0 place-items-center w-screen h-screen p-4 md:p-8 text-base sm:text-sm md:text-lg lg:text-xl">
-        <div className="font-bold text-center sm:text-left max-w-2xl">
+      <div className="grid w-screen h-screen grid-cols-2 gap-4 p-4 text-base max-sm:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 md:gap-2 max-sm:gap-0 place-items-center md:p-8 sm:text-sm md:text-lg lg:text-xl">
+        <div className="max-w-2xl font-bold text-center sm:text-left">
           <motion.p
-            className="mb-4 sm:mb-8 text-xs max-sm:text-sm sm:text-md md:text-lg p-0 text-gradient-white max-sm:mb-0"
+            className="p-0 mb-4 text-xs sm:mb-8 max-sm:text-lg sm:text-md md:text-lg text-gradient-white max-sm:mb-0"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -85,7 +85,7 @@ export default function Hero() {
             Hi, my name is{" "}
           </motion.p>
           <motion.h1
-            className="mb-4 sm:mb-8 text-4xl sm:text-5xl md:text-8xl max-sm:leading-tight text-gradient-white"
+            className="mb-4 text-4xl sm:mb-8 max-sm:text-5xl sm:text-3xl md:text-8xl max-sm:leading-tight text-gradient-white"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
@@ -94,8 +94,7 @@ export default function Hero() {
           </motion.h1>
 
           <motion.div
-            className="flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4
-                        text-sm sm:text-base md:text-xl overflow-hidden text-gradient-white sm:flex-wrap sm:justify-start"
+            className="flex flex-col items-center justify-center gap-2 sm:flex-row sm:gap-4 overflow-hidden text-sm max-sm:text-xl sm:text-lg md:text-xl text-gradient-white sm:flex-wrap sm:justify-start"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
@@ -116,8 +115,7 @@ export default function Hero() {
                   duration: 0.6,
                   ease: "easeInOut",
                 }}
-                className="bg-gradient-custom inline-block text-transparent bg-clip-text
-                         font-bold max-sm:text-base sm:text-lg md:text-xl whitespace-nowrap w-fit"
+                className="inline-block font-bold text-transparent bg-gradient-custom bg-clip-text max-sm:text-2xl sm:text-lg md:text-xl whitespace-nowrap w-fit max-sm:m-2"
               >
                 {words[currentWordIndex]}
               </motion.span>
@@ -128,7 +126,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             style={{ display: "block" }}
             transition={{ duration: 1 }}
-            className="sm:mt-5 text-sm sm:text-base md:text-lg text-gradient-white"
+            className="text-sm max-sm:text-xl sm:mt-5 sm:text-base md:text-lg text-gradient-white"
           >
             {" "}
             to build something amazing
@@ -138,7 +136,10 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className={[classes.card_wrapper, "max-sm:w-full max-sm:max-w-md"].join(" ")}
+          className={[
+            classes.card_wrapper,
+            "max-sm:w-full max-sm:max-w-md",
+          ].join(" ")}
         >
           <div
             className={classes.card}
@@ -150,7 +151,7 @@ export default function Hero() {
               <img
                 src={myLightingDP}
                 alt="profile_photo"
-                className={[classes.profile_image, "max-sm:w-32"].join(" ")}
+                className={[classes.profile_image, "max-sm:w-34"].join(" ")}
               />
             </div>
             <div className={classes.card_gradient}></div>

@@ -36,7 +36,7 @@
 /* Tablet styles */
 @media (min-width: 641px) and (max-width: 1024px) {
   :root {
-    --card-size: 400px;
+    --card-size: 480px;
     --font-size: 0.875rem;
     --logo-size: calc(var(--card-size) * 0.95);
   }
@@ -56,7 +56,6 @@
   }
 }
 
-/* Your original CSS */
 .card {
   width: var(--card-size);
   height: 100%;

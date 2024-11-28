@@ -2,14 +2,19 @@ import personalLogo from "../../../assets/img/Logo_bg.png";
 import { RxDownload } from "react-icons/rx";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
+import resumePdf from "../../../assets/data/Pranay-Ghuge-Resume.pdf";
 
 export default function NavBar() {
   const [isClicked, setIsClicked] = useState<boolean>(false);
 
-  const [binaryText, setBinaryText] = useState<string>("10101010010100101000010010");
+  const [binaryText, setBinaryText] = useState<string>(
+    "10101010010100101000010010",
+  );
 
   const generateBinary = (length: number): string => {
-    return Array.from({ length }, () => (Math.random() > 0.5 ? "1" : "0")).join("");
+    return Array.from({ length }, () => (Math.random() > 0.5 ? "1" : "0")).join(
+      "",
+    );
   };
 
   useEffect(() => {
@@ -28,7 +33,15 @@ export default function NavBar() {
 
   const handledownloadClick = () => {
     setIsClicked(true);
-    //To Do Functionality To Download
+
+    const link = document.createElement("a");
+    link.href = resumePdf;
+    link.download = "Pranay-Ghuge-CV.pdf";
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
     setTimeout(() => {
       setIsClicked(false);
     }, 800);
@@ -66,7 +79,9 @@ export default function NavBar() {
                 transition={{ duration: 0.2 }}
                 className="flex"
               >
-                <span className="bg-gradient-custom text-transparent bg-clip-text max-sm:hidden">Download Resume</span>
+                <span className="bg-gradient-custom text-transparent bg-clip-text max-sm:hidden">
+                  Download Resume
+                </span>
                 <RxDownload className="text-accent size-4 ml-1 inline-block self-center max-sm:m-0 max-sm:size-6" />
               </motion.div>
             ) : (
