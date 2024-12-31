@@ -11,7 +11,7 @@ const SectionHeading = ({ children, className = "" }: HeadingProps) => (
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ amount: "some", once: true }}
     transition={{ duration: 0.5 }}
-    className={`mb-15 text-center font-bold uppercase text-gradient-white max-sm:text-5xl sm:text-5xl md:text-6xl lg:text-7xl ${className} `}
+    className={`mb-24 text-center font-bold uppercase text-gradient-white max-sm:text-5xl sm:text-5xl md:text-6xl lg:text-7xl ${className} `}
   >
     {children}
   </motion.h2>

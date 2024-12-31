@@ -6,17 +6,17 @@ export default function Experience() {
   const { experiences } = experienceData;
 
   return (
-    <section>
+    <section id="experience">
       <div className="flex flex-col justify-center">
         <SectionHeading>Experience Log</SectionHeading>
-        <div className="relative m-36 w-1/2 self-center max-sm:w-full">
+        <div className="relative mx-36 w-1/2 self-center max-sm:w-full">
           {/* Timeline line */}
 
           <motion.div
             initial={{ opacity: 0, height: 0, y: 20 }}
             whileInView={{ opacity: 1, height: "100%", y: 0 }}
             viewport={{ amount: "some", once: true }}
-            transition={{ duration: 2, delay: 0.9 }}
+            transition={{ duration: 1, delay: 0.5 }}
             className="absolute bottom-0 left-3.5 top-4 w-[1px] bg-gradient-to-b from-primary via-secondary last:w-0 max-sm:left-[2rem] max-sm:top-8"
           />
 
@@ -27,7 +27,7 @@ export default function Experience() {
               initial={{ opacity: 0, y: 60 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ amount: "some", once: true }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.5 }}
             >
               <div className="absolute -left-14 top-0 rounded-full bg-gray-900 p-2 text-center max-sm:-left-[2.8rem] max-sm:p-[20px]">
                 <img

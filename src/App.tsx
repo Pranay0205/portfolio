@@ -1,3 +1,4 @@
+// App.tsx
 import "./App.css";
 import Experience from "./components/sections/Experience/experience";
 import Hero from "./components/sections/Hero/hero";

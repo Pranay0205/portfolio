@@ -17,10 +17,10 @@ export default function Testimonials() {
   ];
 
   return (
-    <section>
+    <section id="testimonials">
       <SectionHeading>Word On Street</SectionHeading>
-      <div className="m-20 px-4 max-sm:m-2 sm:m-4 md:m-8">
-        <div className="mx-auto mt-20 grid max-w-fit gap-8 max-sm:grid-cols-1 md:grid-cols-2">
+      <div className="m-20 px-6 max-sm:m-2 sm:m-4 md:m-8">
+        <div className="mx-auto mt-20 grid max-w-7xl gap-8 max-sm:grid-cols-1 md:grid-cols-2">
           {testimonials.map((testimonial, index) => (
             <motion.div
               initial={{ opacity: 0, y: 80 }}
@@ -34,7 +34,7 @@ export default function Testimonials() {
               <div className="absolute inset-0 rounded-xl bg-gradient-custom text-dark opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
               <FaQuoteLeft className="z-12 absolute -top-5 left-0 h-10 w-10 text-gray-700" />
               <blockquote className="relative z-10">
-                <p className="leading-relaxed text-gray-300">
+                <p className="text-justify leading-relaxed text-gray-300">
                   {testimonial.text}
                 </p>
                 <footer className="mt-6">

@@ -65,7 +65,7 @@
   justify-content: center;
   aspect-ratio: 1;
   position: relative;
-  margin: 1rem;
+  margin: auto;
   border-radius: 2rem;
   overflow: hidden;
   cursor: pointer;

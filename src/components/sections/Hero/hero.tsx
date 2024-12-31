@@ -73,11 +73,11 @@ export default function Hero() {
   }, [words.length]);
 
   return (
-    <section>
-      <div className="grid w-screen h-screen grid-cols-2 gap-4 p-4 text-base max-sm:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 md:gap-2 max-sm:gap-0 place-items-center md:p-8 sm:text-sm md:text-lg lg:text-xl">
-        <div className="max-w-2xl font-bold text-center sm:text-left">
+    <section id="home">
+      <div className="grid h-screen w-screen select-none grid-cols-2 place-items-center gap-4 p-4 text-base max-sm:grid-cols-1 max-sm:gap-0 sm:grid-cols-1 sm:text-sm md:grid-cols-1 md:gap-2 md:p-8 md:text-lg lg:grid-cols-2 lg:text-xl">
+        <div className="max-w-2xl text-center font-bold sm:text-left">
           <motion.p
-            className="p-0 mb-4 text-xs sm:mb-8 max-sm:text-lg sm:text-md md:text-lg text-gradient-white max-sm:mb-0"
+            className="sm:text-md mb-4 p-0 text-xs text-gradient-white max-sm:mb-0 max-sm:text-lg sm:mb-8 md:text-lg"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -85,7 +85,7 @@ export default function Hero() {
             Hi, my name is{" "}
           </motion.p>
           <motion.h1
-            className="mb-4 text-4xl sm:mb-8 max-sm:text-5xl sm:text-3xl md:text-8xl max-sm:leading-tight text-gradient-white"
+            className="mb-4 text-4xl text-gradient-white max-sm:text-5xl max-sm:leading-tight sm:mb-8 sm:text-3xl md:text-8xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
@@ -94,14 +94,14 @@ export default function Hero() {
           </motion.h1>
 
           <motion.div
-            className="flex flex-col items-center justify-center gap-2 sm:flex-row sm:gap-4 overflow-hidden text-sm max-sm:text-xl sm:text-lg md:text-xl text-gradient-white sm:flex-wrap sm:justify-start"
+            className="flex flex-col items-center justify-center gap-2 overflow-hidden text-sm text-gradient-white max-sm:gap-2 max-sm:text-xl sm:flex-row sm:flex-wrap sm:justify-start sm:text-lg md:text-xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
           >
             <div
               style={{ width: "fit-content" }}
-              className="w-[200px] sm:w-[210px] md:w-[300px] flex justify-center overflow-hidden"
+              className="flex w-[200px] justify-center overflow-hidden sm:w-[210px] md:w-[300px]"
             >
               a Software Engineer, Found my way through
             </div>
@@ -115,7 +115,7 @@ export default function Hero() {
                   duration: 0.6,
                   ease: "easeInOut",
                 }}
-                className="inline-block font-bold text-transparent bg-gradient-custom bg-clip-text max-sm:text-2xl sm:text-lg md:text-xl whitespace-nowrap w-fit max-sm:m-2"
+                className="inline-block w-fit whitespace-nowrap bg-gradient-custom bg-clip-text font-bold text-transparent max-sm:m-2 max-sm:text-2xl sm:text-lg md:text-xl"
               >
                 {words[currentWordIndex]}
               </motion.span>
@@ -125,8 +125,8 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             style={{ display: "block" }}
-            transition={{ duration: 1 }}
-            className="text-sm max-sm:text-xl sm:mt-5 sm:text-base md:text-lg text-gradient-white"
+            transition={{ duration: 0.8 }}
+            className="text-sm text-gradient-white max-sm:text-xl sm:mt-5 sm:text-base md:text-lg"
           >
             {" "}
             to build something amazing

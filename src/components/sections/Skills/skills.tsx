@@ -179,7 +179,7 @@ export default function skills() {
   ];
 
   return (
-    <div className="h-full">
+    <section className="h-full" id="skills">
       <SectionHeading>TECH ARSENAL</SectionHeading>
       <div className="mx-auto my-20 w-full max-w-max px-8">
         <div className="sm:gird-cols-2 m-10 grid grid-flow-row gap-4 max-sm:grid-cols-2 md:grid-cols-6 md:gap-8 lg:grid-cols-10">
@@ -212,6 +212,6 @@ export default function skills() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -1,15 +1,26 @@
-import personalLogo from "../../../assets/img/Logo_bg.png";
-import { RxDownload } from "react-icons/rx";
-import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { RxDownload } from "react-icons/rx";
+import { IoMenu, IoClose } from "react-icons/io5";
+import personalLogo from "../../../assets/img/Logo_bg.png";
 import resumePdf from "../../../assets/data/Pranay-Ghuge-Resume.pdf";
 
 export default function NavBar() {
-  const [isClicked, setIsClicked] = useState<boolean>(false);
+  const [isClicked, setIsClicked] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [binaryText, setBinaryText] = useState("10101010010100101000010010");
+  const [visible, setVisible] = useState(true);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [activeSection, setActiveSection] = useState("home");
 
-  const [binaryText, setBinaryText] = useState<string>(
-    "10101010010100101000010010",
-  );
+  const navLinks = [
+    { path: "#home", label: "Home" },
+    { path: "#about", label: "About Me" },
+    { path: "#skills", label: "Tech Arsenal" },
+    { path: "#experience", label: "Experience Log" },
+    { path: "#testimonials", label: "Word on Street" },
+    { path: "#projects", label: "Side Quests" },
+  ];
 
   const generateBinary = (length: number): string => {
     return Array.from({ length }, () => (Math.random() > 0.5 ? "1" : "0")).join(
@@ -18,7 +29,7 @@ export default function NavBar() {
   };
 
   useEffect(() => {
-    let intervalId: ReturnType<typeof setInterval>;
+    let intervalId: number | undefined;
 
     if (isClicked) {
       intervalId = setInterval(() => {
@@ -31,44 +42,118 @@ export default function NavBar() {
     };
   }, [isClicked]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+      setPrevScrollPos(currentScrollPos);
+
+      // Update active section based on scroll position
+      const sections = navLinks.map((link) => ({
+        id: link.path.slice(1),
+        offset: document.getElementById(link.path.slice(1))?.offsetTop || 0,
+      }));
+
+      const currentSection = sections.reduce((acc, section) => {
+        return currentScrollPos >= section.offset - 200 ? section.id : acc;
+      }, sections[0].id);
+
+      setActiveSection(currentSection);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [prevScrollPos, navLinks]);
+
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    path: string,
+  ) => {
+    e.preventDefault();
+    const element = document.getElementById(path.slice(1));
+    if (element) {
+      const elementPosition =
+        element.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: elementPosition - 100, // Stop 100px above the section
+        behavior: "smooth",
+      });
+      setIsMenuOpen(false);
+    }
+  };
+
   const handledownloadClick = () => {
     setIsClicked(true);
-
     const link = document.createElement("a");
     link.href = resumePdf;
     link.download = "Pranay-Ghuge-CV.pdf";
-
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-
-    setTimeout(() => {
-      setIsClicked(false);
-    }, 800);
+    setTimeout(() => setIsClicked(false), 800);
   };
 
   return (
     <motion.nav
       layout
       initial={{ y: -30, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
+      animate={{
+        y: visible ? 0 : -100,
+        opacity: visible ? 1 : 0,
+      }}
       transition={{
         duration: 0.5,
         type: "spring",
         stiffness: 100,
         damping: 20,
       }}
-      className="mt-4 origin-center rounded-xl bg-gray-900/50 p-2"
+      className="fixed left-0 right-0 top-0 z-50 mx-28 mt-4 origin-center rounded-xl bg-gray-900/50 p-2 backdrop-blur-sm md:mx-28"
     >
-      <div className="mx-auto flex justify-between px-12 max-sm:px-2">
+      <div className="mx-auto flex items-center justify-between px-4 md:px-12">
         <img
           src={personalLogo}
-          className="h-16 w-auto object-contain p-2 max-sm:h-8 max-sm:self-center max-sm:p-0"
+          className="h-8 w-auto object-contain p-0 md:h-16 md:p-2"
           alt="Logo_With_Animation"
         />
+
+        {/* Mobile Menu Button */}
         <button
-          className="max-sm:px-15 relative inline-flex h-12 w-72 items-center justify-center self-center rounded-xl bg-zinc-200 px-10 font-medium uppercase max-sm:w-10"
-          onClick={() => handledownloadClick()}
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="p-2 text-gray-400 hover:text-white 2xl:hidden"
+        >
+          {isMenuOpen ? <IoClose size={24} /> : <IoMenu size={24} />}
+        </button>
+
+        {/* Desktop Navigation */}
+        <div className="hidden items-center gap-4 2xl:flex">
+          {navLinks.map((link) => (
+            <a
+              key={link.path}
+              href={link.path}
+              onClick={(e) => handleNavClick(e, link.path)}
+              className={`group relative whitespace-nowrap rounded-lg px-3 py-2 text-sm transition-all duration-300 ease-in-out hover:scale-110 ${
+                activeSection === link.path.slice(1)
+                  ? "text-white"
+                  : "text-gray-400 hover:text-white"
+              }`}
+            >
+              <span className="relative z-10">{link.label}</span>
+              <span className="absolute inset-0 -z-10 scale-75 rounded-lg bg-gray-800 opacity-0 transition-all duration-300 ease-in-out group-hover:scale-100 group-hover:opacity-100"></span>
+
+              {activeSection === link.path.slice(1) && (
+                <motion.div
+                  layoutId="activeSection"
+                  className="absolute inset-0 -z-10 rounded-lg bg-gray-800"
+                  transition={{ type: "spring", duration: 0.6 }}
+                />
+              )}
+            </a>
+          ))}
+        </div>
+
+        <button
+          className="relative inline-flex h-10 w-10 items-center justify-center rounded-xl bg-zinc-200 px-2 font-medium uppercase md:h-12 md:w-56 md:px-6"
+          onClick={handledownloadClick}
         >
           <AnimatePresence mode="wait">
             {!isClicked ? (
@@ -79,10 +164,10 @@ export default function NavBar() {
                 transition={{ duration: 0.2 }}
                 className="flex"
               >
-                <span className="bg-gradient-custom bg-clip-text text-transparent max-sm:hidden">
+                <span className="hidden bg-gradient-custom bg-clip-text text-sm text-transparent md:block">
                   Download Resume
                 </span>
-                <RxDownload className="ml-1 inline-block size-4 self-center text-accent max-sm:m-0 max-sm:size-6" />
+                <RxDownload className="size-6 self-center text-accent md:ml-1 md:size-4" />
               </motion.div>
             ) : (
               <motion.span
@@ -92,7 +177,7 @@ export default function NavBar() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 1, y: -20 }}
                 transition={{ duration: 0.2 }}
-                className="bg-gradient-custom bg-clip-text text-transparent max-sm:w-12"
+                className="w-12 bg-gradient-custom bg-clip-text text-transparent"
               >
                 {binaryText}
               </motion.span>
@@ -100,6 +185,35 @@ export default function NavBar() {
           </AnimatePresence>
         </button>
       </div>
+
+      {/* Mobile Navigation Menu */}
+      <AnimatePresence>
+        {isMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            className="overflow-hidden 2xl:hidden"
+          >
+            <div className="flex flex-col gap-2 p-4">
+              {navLinks.map((link) => (
+                <a
+                  key={link.path}
+                  href={link.path}
+                  onClick={(e) => handleNavClick(e, link.path)}
+                  className={`rounded-lg px-4 py-3 text-sm transition-colors ${
+                    activeSection === link.path.slice(1)
+                      ? "bg-gray-800 text-white"
+                      : "text-gray-400 hover:bg-gray-800 hover:text-white"
+                  }`}
+                >
+                  {link.label}
+                </a>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.nav>
   );
 }
