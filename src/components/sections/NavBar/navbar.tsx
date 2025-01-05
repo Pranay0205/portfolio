@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { RxDownload } from "react-icons/rx";
 import { IoMenu, IoClose } from "react-icons/io5";
@@ -13,14 +13,17 @@ export default function NavBar() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [activeSection, setActiveSection] = useState("home");
 
-  const navLinks = [
-    { path: "#home", label: "Home" },
-    { path: "#about", label: "About Me" },
-    { path: "#skills", label: "Tech Arsenal" },
-    { path: "#experience", label: "Experience Log" },
-    { path: "#testimonials", label: "Word on Street" },
-    { path: "#projects", label: "Side Quests" },
-  ];
+  const navLinks = useMemo(
+    () => [
+      { path: "#home", label: "Home" },
+      { path: "#about", label: "About Me" },
+      { path: "#skills", label: "Tech Arsenal" },
+      { path: "#experience", label: "Experience Log" },
+      { path: "#testimonials", label: "Word on Street" },
+      { path: "#projects", label: "Side Quests" },
+    ],
+    [],
+  );
 
   const generateBinary = (length: number): string => {
     return Array.from({ length }, () => (Math.random() > 0.5 ? "1" : "0")).join(
@@ -53,11 +56,20 @@ export default function NavBar() {
         id: link.path.slice(1),
         offset: document.getElementById(link.path.slice(1))?.offsetTop || 0,
       }));
+      let currentSection;
+      if (currentScrollPos <= prevScrollPos) {
+        currentSection =
+          [...sections]
+            .reverse()
+            .find((section) => currentScrollPos >= section.offset - 200)?.id ||
+          sections[0].id;
 
-      const currentSection = sections.reduce((acc, section) => {
-        return currentScrollPos >= section.offset - 200 ? section.id : acc;
-      }, sections[0].id);
-
+        setActiveSection(currentSection);
+      } else {
+        currentSection =
+          sections.find((section) => currentScrollPos >= section.offset - 200)
+            ?.id || sections[0].id;
+      }
       setActiveSection(currentSection);
     };
 
@@ -72,12 +84,26 @@ export default function NavBar() {
     e.preventDefault();
     const element = document.getElementById(path.slice(1));
     if (element) {
-      const elementPosition =
-        element.getBoundingClientRect().top + window.scrollY;
-      window.scrollTo({
-        top: elementPosition - 100, // Stop 100px above the section
-        behavior: "smooth",
-      });
+      // Use a smaller offset on mobile
+      const isMobile = window.innerWidth < 768;
+
+      const headerHeight = isMobile ? 100 : 40;
+
+      // Calculate position accounting for header
+      const elementPosition = element.offsetTop;
+
+      const offset = isMobile ? 0 : 100;
+
+      setTimeout(
+        () =>
+          window.scrollTo({
+            top: elementPosition - headerHeight - offset,
+            behavior: "smooth",
+          }),
+        100,
+      );
+
+      // Close mobile menu after click
       setIsMenuOpen(false);
     }
   };
@@ -107,12 +133,12 @@ export default function NavBar() {
         stiffness: 100,
         damping: 20,
       }}
-      className="fixed left-0 right-0 top-0 z-50 mx-28 mt-4 origin-center rounded-xl bg-gray-900/50 p-2 backdrop-blur-sm md:mx-28"
+      className="fixed left-0 right-0 top-0 z-50 mt-4 origin-center rounded-xl bg-gray-900/50 p-2 backdrop-blur-sm max-sm:mx-auto max-sm:w-[90%] md:mx-28 lg:mx-28"
     >
       <div className="mx-auto flex items-center justify-between px-4 md:px-12">
         <img
           src={personalLogo}
-          className="h-8 w-auto object-contain p-0 md:h-16 md:p-2"
+          className="h-8 w-auto object-contain p-0 max-sm:h-10 md:h-16 md:p-2"
           alt="Logo_With_Animation"
         />
 
@@ -139,20 +165,21 @@ export default function NavBar() {
             >
               <span className="relative z-10">{link.label}</span>
               <span className="absolute inset-0 -z-10 scale-75 rounded-lg bg-gray-800 opacity-0 transition-all duration-300 ease-in-out group-hover:scale-100 group-hover:opacity-100"></span>
-
-              {activeSection === link.path.slice(1) && (
-                <motion.div
-                  layoutId="activeSection"
-                  className="absolute inset-0 -z-10 rounded-lg bg-gray-800"
-                  transition={{ type: "spring", duration: 0.6 }}
-                />
-              )}
+              <AnimatePresence mode="wait">
+                {activeSection === link.path.slice(1) && (
+                  <motion.div
+                    layoutId="activeSection"
+                    className="absolute inset-0 -z-10 rounded-lg bg-gray-800"
+                    transition={{ type: "spring", duration: 0.6 }}
+                  />
+                )}
+              </AnimatePresence>
             </a>
           ))}
         </div>
 
         <button
-          className="relative inline-flex h-10 w-10 items-center justify-center rounded-xl bg-zinc-200 px-2 font-medium uppercase md:h-12 md:w-56 md:px-6"
+          className="relative inline-flex h-10 w-10 items-center justify-center rounded-xl bg-zinc-200 px-2 font-medium uppercase max-sm:h-12 max-sm:w-20 md:h-12 md:w-56 md:px-6"
           onClick={handledownloadClick}
         >
           <AnimatePresence mode="wait">
