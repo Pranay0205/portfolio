@@ -37,18 +37,17 @@
     },
     {
       "name": "Ocular Eye Disease Detection",
-      "organization": "Freelancing",
+      "organization": "Umass Dartmouth",
       "tech_stack": ["Python", "Tensorflow", "CNN"],
       "achievements": [
-        "Developed an AI-powered medical imaging system using TensorFlow and OpenCV that processes 5000+ retinal images to detect 8 distinct ocular diseases with 86% accuracy",
-        "Implemented transfer learning with EfficientNetB0 and ResNet50 models, optimizing the classification system for medical image analysis and disease detection",
-        "Built comprehensive data pipelines using OpenCV and Albumentations for image preprocessing, increasing model generalization and reducing overfitting",
-        "Engineered interactive medical visualization dashboards using Plotly and Seaborn, enabling clear analysis of disease patterns across patient demographics",
-        "Applied K-means clustering and PCA techniques for advanced pattern recognition in retinal images, enhancing feature extraction capabilities for disease classification"
+        "Built an AI-powered medical imaging system using TensorFlow and OpenCV, detecting 8 ocular diseases with 86% accuracy on 5000+ retinal images",
+        "Used EfficientNetB0 and ResNet50 with transfer learning to optimize medical image classification",
+        "Created interactive dashboards with Plotly and Seaborn for visualizing disease patterns",
+        "Applied K-means clustering and PCA for advanced pattern recognition and feature extraction"
       ],
       "link": "https://github.com/Pranay0205/ocular_eye_disease_detection",
-      "date": "Apr 2022",
-      "location": "Pune, India"
+      "date": "Nov 2024",
+      "location": "Dartmouth, USA"
     },
     {
       "name": "Shadow-interiors Website",

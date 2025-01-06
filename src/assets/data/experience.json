@@ -10,8 +10,8 @@
         {
           "name": "CloudSync",
           "achievements": [
-            "Developed a high-performance data transfer application with .NET, React.js, and Material UI, achieving an  85% improvement in transfer times and $100,000 annual storage cost savings",
-            "Integrated RESTful APIs with parallel processing techniques, optimizing large data transfers and minimizingoperational costs",
+            "Developed a high-performance data transfer application with .NET, React.js, and Material UI, achieving an 85% improvement in transfer times and significant annual storage cost savings",
+            "Integrated RESTful APIs with parallel processing techniques, optimizing large data transfers and minimizing operational costs",
             "Created an intuitive UI with real-time tracking, streamlining user experience and reducing manual intervention"
           ]
         },
