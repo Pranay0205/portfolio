@@ -13,9 +13,9 @@
         "RenderDoc"
       ],
       "achievements": [
-        "Developed a Python-based monitoring system to evaluate GPU performance across NVIDIA architectures, tracking metrics like TFLOPS and memory bandwidth",
-        "Conducted benchmarking of DirectX 12 API on RTX 3000/4000 series GPUs, improving understanding of architectural impacts on performance",
-        "Utilized NVIDIA NSight and RenderDoc for deep-dive analysis of graphics API calls, memory access patterns, and shader program execution efficiency"
+        "Developed Python scripts to monitor GPU performance across NVIDIA architectures, tracking TFLOPS, bandwidth, and optimization metrics",
+        "Benchmarked CUDA kernels on RTX 3000/4000 series GPUs using Nsight Compute, analyzing architectural performance impacts",
+        "Utilized Nsight Graphics for comprehensive analysis of API calls and shader execution patterns across gaming engines"
       ],
       "link": "https://github.com/Pranay0205/gpu-cuda-performance-profiler",
       "date": "Nov 2024",
@@ -26,9 +26,9 @@
       "organization": "Umass Dartmouth",
       "tech_stack": ["Python", "Lambda Functions", "QuickSight", "REST APIs"],
       "achievements": [
-        "Built a serverless pipeline on AWS Lambda for ingesting hourly weather data across 14 regions, enabling automated, real-time analysis of weather patterns",
-        "Structured S3 storage and CSV processing for efficient querying, reducing data retrieval time by 30%",
-        "Designed a real-time weather dashboard with automated alerts and interactive visualizations, used to inform responses to weather changes across climate zones"
+        "Created a serverless AWS Lambda pipeline for real-time weather analysis across 14 regions",
+        "Optimized S3 storage and CSV processing, cutting data retrieval time by 30%",
+        "Built an interactive weather dashboard with alerts for climate zone monitoring"
       ],
       "link": "https://github.com/Pranay0205/realtime-weather-data-analysis",
       "img": "/project_snapshots/Dashboard.png",
@@ -40,10 +40,9 @@
       "organization": "Umass Dartmouth",
       "tech_stack": ["Python", "Tensorflow", "CNN"],
       "achievements": [
-        "Built an AI-powered medical imaging system using TensorFlow and OpenCV, detecting 8 ocular diseases with 86% accuracy on 5000+ retinal images",
-        "Used EfficientNetB0 and ResNet50 with transfer learning to optimize medical image classification",
-        "Created interactive dashboards with Plotly and Seaborn for visualizing disease patterns",
-        "Applied K-means clustering and PCA for advanced pattern recognition and feature extraction"
+        "Developed an ML model with TensorFlow to detect 8 ocular diseases from 5000+ retinal images",
+        "Achieved 86% accuracy using EfficientNetB0 and transfer learning",
+        "Improved feature extraction with K-means clustering and PCA"
       ],
       "link": "https://github.com/Pranay0205/ocular_eye_disease_detection",
       "date": "Nov 2024",

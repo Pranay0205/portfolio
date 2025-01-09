@@ -8,19 +8,11 @@
       "location": "Bengaluru, India",
       "projects": [
         {
-          "name": "CloudSync",
+          "name": "Database Migration Tool",
           "achievements": [
-            "Developed a high-performance data transfer application with .NET, React.js, and Material UI, achieving an 85% improvement in transfer times and significant annual storage cost savings",
-            "Integrated RESTful APIs with parallel processing techniques, optimizing large data transfers and minimizing operational costs",
-            "Created an intuitive UI with real-time tracking, streamlining user experience and reducing manual intervention"
-          ]
-        },
-        {
-          "name": "RMS DMT",
-          "achievements": [
-            "Developed a secure web application with React and .NET for multi-terabyte database transfers, ensuring compliance and faster processing",
-            "Designed a React-based file explorer with intuitive navigation, reducing manual operations by 40%",
-            "Built a robust testing suite with 90% coverage, lowering production incidents by 20% and eliminating data corruption"
+            "Engineered React & .NET web app enabling seamless database uploads via API integration",
+            "Developed intuitive file management interface streamlining data operations",
+            "Built real-time monitoring dashboard with comprehensive progress tracking and status updates"
           ]
         }
       ]
@@ -33,11 +25,11 @@
       "location": "Bengaluru, India",
       "projects": [
         {
-          "name": "PreprocessorWeb",
+          "name": "Enterprise Application Platform",
           "achievements": [
-            "Developed an integrated web application with .NET and React, reducing maintenance costs and streamlining operations for multiple client application",
-            "Redesigned the UI using React, leading to a 30% faster information retrieval and improved usability",
-            "Conducted extensive testing, resolving integration issues and delivering a smooth user experience"
+            "Consolidated multiple apps into single .NET & React webapp, reducing maintenance costs by 35%",
+            "Built modern React UI with optimized caching, reducing load times by 30%",
+            "Automated file processing workflow using Python scripts, significantly reducing processing time"
           ]
         }
       ]
@@ -50,11 +42,11 @@
       "location": "Hyderabad, India",
       "projects": [
         {
-          "name": "",
+          "name": "Financial Trading System",
           "achievements": [
-            "Led a team of five in completing the final project within the stipulated timeline, using Agile methodologies, task delegation, and architectural design",
-            "Created a miniature replica of the E-Trade system as the internship's final project",
-            "Designed a scalable back-end using N-Tier architecture and technologies such as .NET and MySQL, ensuringseamless data retrieval and robust system performance"
+            "Led 5-member team building trading application using .NET and MySQL, architecting core transaction system",
+            "Gained hands-on experience with N-tier architecture and principles of building enterprise applications",
+            "Applied Agile methodologies to deliver project milestones on schedule"
           ]
         }
       ]
