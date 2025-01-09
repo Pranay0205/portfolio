@@ -74,7 +74,7 @@ export default function Hero() {
 
   return (
     <section id="home">
-      <div className="grid h-screen w-screen select-none grid-cols-2 place-items-center gap-4 p-4 text-base max-sm:grid-cols-1 max-sm:gap-0 sm:grid-cols-1 sm:text-sm md:grid-cols-1 md:gap-2 md:p-8 md:text-lg lg:grid-cols-2 lg:text-xl">
+      <div className="grid h-screen w-screen select-none grid-cols-2 place-items-center gap-4 p-4 text-base max-sm:mt-12 max-sm:grid-cols-1 max-sm:gap-0 sm:grid-cols-1 sm:text-sm md:grid-cols-1 md:gap-2 md:p-8 md:text-lg lg:grid-cols-2 lg:text-xl">
         <div className="max-w-2xl text-center font-bold sm:text-left">
           <motion.p
             className="sm:text-md mb-4 p-0 text-xs text-gradient-white max-sm:mb-0 max-sm:text-lg sm:mb-8 md:text-lg"
