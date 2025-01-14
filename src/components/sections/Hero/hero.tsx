@@ -151,7 +151,7 @@ export default function Hero() {
               <img
                 src={myLightingDP}
                 alt="profile_photo"
-                className={[classes.profile_image, "max-sm:w-34"].join(" ")}
+                className={[classes.profile_image, "max-sm:w-32"].join(" ")}
               />
             </div>
             <div className={classes.card_gradient}></div>

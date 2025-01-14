@@ -1,6 +1,20 @@
 {
   "projects": [
     {
+      "name": "Asteroids Vidoe Game",
+      "organization": "Umass Dartmouth",
+      "tech_stack": ["Python", "Pygame", "OOP"],
+      "achievements": [
+        "Developed a 2D space shooter game using Python and Pygame",
+        "Implemented real-time physics and collision detection systems",
+        "Designed object-oriented architecture using inheritance and encapsulation for game management"
+      ],
+      "link": "https://github.com/Pranay0205/asteroids-game",
+      "img": "/project_snapshots/Asteroids.webp",
+      "date": "Nov 2024",
+      "location": "Dartmouth, USA"
+    },
+    {
       "name": "GPU Architecture Performance Analysis",
       "organization": "Umass Dartmouth",
       "tech_stack": [
@@ -58,7 +72,7 @@
         "Deployed the website to Firebase Hosting, enhancing the performance, security, and scalability of the website"
       ],
       "link": "https://github.com/Pranay0205/shadow-interiors",
-      "img": "/project_snapshots/Shadow_Interiors.png",
+      "img": "/project_snapshots/Shadow_interiors.webp",
       "date": "Apr 2022",
       "location": "Pune, India"
     }
