@@ -12,10 +12,7 @@ Software Engineer with 3 years in full-stack development using .NET, React, Pyth
 {
   "frontend": ["React.js", "TypeScript"],
   "styling": "TailwindCSS",
-  "animation": "Framer Motion",
-  "backend": [".NET", "Python", "Node.js"],
-  "cloud": ["AWS", "Azure"],
-  "database": ["MongoDB", "MySQL"]
+  "animation": "Framer Motion"
 }
 ```
 
