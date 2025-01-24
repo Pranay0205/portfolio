@@ -1,6 +1,10 @@
-# 🚀 pranayghuge.com
+# 🚀 Portfolio
 
-> Software Engineer with 3 years in full-stack development using .NET, React, Python, and cloud technologies. Experience in building enterprise data solutions. Currently pursuing Master's in Computer Science at UMass Dartmouth.
+### 🔗 [pranayghuge.com](https://pranayghuge.com)
+
+> Breaking Through Code & Complexity
+
+Software Engineer with 3 years in full-stack development using .NET, React, Python, and cloud technologies. Experience in building enterprise data solutions. Currently pursuing Master's in Computer Science at UMass Dartmouth.
 
 ## ⚡️ Tech
 
