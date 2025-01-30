@@ -10,9 +10,9 @@
         {
           "name": "Database Migration Tool",
           "achievements": [
-            "Engineered React & .NET web app enabling seamless database uploads via API integration",
-            "Developed intuitive file management interface streamlining data operations",
-            "Built real-time monitoring dashboard with comprehensive progress tracking and status updates"
+            "Architected RESTful API using Data Movement Library, React & .NET for multi-terabyte database transfers",
+            "Developed intuitive file management interface and real-time dashboard streamlining data operations",
+            "Achieved 90% test coverage, cutting production incidents by 20%"
           ]
         }
       ]
@@ -29,7 +29,7 @@
           "achievements": [
             "Consolidated multiple apps into single .NET & React webapp, reducing maintenance costs by 35%",
             "Built modern React UI with optimized caching, reducing load times by 30%",
-            "Automated file processing workflow using Python scripts, significantly reducing processing time"
+            "Automated file processing workflow using Python scripts, reducing 1-hour process to 10 minutes"
           ]
         }
       ]
@@ -44,9 +44,9 @@
         {
           "name": "Financial Trading System",
           "achievements": [
-            "Led 5-member team building trading application using .NET and MySQL, architecting core transaction system",
-            "Gained hands-on experience with N-tier architecture and principles of building enterprise applications",
-            "Applied Agile methodologies to deliver project milestones on schedule"
+            "Led 5-member team to build .NET trading system with MySQL",
+            "Applied N-tier architecture principles to build enterprise applications",
+            "Leveraged Agile methodologies to deliver project milestones on schedule"
           ]
         }
       ]

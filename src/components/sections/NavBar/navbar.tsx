@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { RxDownload } from "react-icons/rx";
 import { IoMenu, IoClose } from "react-icons/io5";
 import personalLogo from "../../../assets/img/Logo_bg.png";
-import resumePdf from "../../../assets/data/Pranay-Ghuge-Resume.pdf";
 
 export default function NavBar() {
   const [isClicked, setIsClicked] = useState(false);
@@ -111,8 +110,10 @@ export default function NavBar() {
   const handledownloadClick = () => {
     setIsClicked(true);
     const link = document.createElement("a");
-    link.href = resumePdf;
+    link.href =
+      "https://drive.google.com/file/d/10OqdDoIiFA-gNecR7_V4kcEfVzCyPDgt/view?usp=sharing";
     link.download = "Pranay-Ghuge-CV.pdf";
+    link.target = "_blank";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

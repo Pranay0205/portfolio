@@ -69,6 +69,18 @@ export default function skills() {
       color: "tailwindCyan",
     },
     {
+      id: "dotnetcore",
+      src: "/logos/Dot_Net_Core.svg",
+      alt: ".NET Core",
+      color: "dotnetPurple",
+    },
+    {
+      id: "python",
+      src: "/logos/Python.svg",
+      alt: "Python",
+      color: "pythonBlue",
+    },
+    {
       id: "javascript",
       src: "/logos/JavaScipt.svg",
       alt: "JavaScript",
@@ -85,18 +97,6 @@ export default function skills() {
       src: "/logos/Cpp.svg",
       alt: "C++",
       color: "cppBlue",
-    },
-    {
-      id: "dotnetcore",
-      src: "/logos/Dot_Net_Core.svg",
-      alt: ".NET Core",
-      color: "dotnetPurple",
-    },
-    {
-      id: "python",
-      src: "/logos/Python.svg",
-      alt: "Python",
-      color: "pythonBlue",
     },
     {
       id: "tensorflow",
