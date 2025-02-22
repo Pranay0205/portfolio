@@ -11,7 +11,21 @@
       ],
       "link": "https://github.com/Pranay0205/asteroids-game",
       "img": "/project_snapshots/Asteroids.webp",
-      "date": "Nov 2024",
+      "date": "Jan 2025",
+      "location": "Dartmouth, USA"
+    },
+    {
+      "name": "Auto Doc",
+      "organization": "Brown University",
+      "tech_stack": ["Python", "React.JS", "FastAPI", "Ollama", "Tailwind CSS"],
+      "achievements": [
+        "Built AI-powered Python documentation generator using Deepseek model via Ollama and FastAPI",
+        "Developed interactive documentation viewer in React with PDF export functionality",
+        "Built FastAPI backend with async processing and code files handling for Python documentation"
+      ],
+      "link": "https://github.com/Pranay0205/autodoc",
+      "img": "/project_snapshots/AutoDoc.png",
+      "date": "Feb 2025",
       "location": "Dartmouth, USA"
     },
     {
@@ -32,13 +46,21 @@
         "Utilized Nsight Graphics for comprehensive analysis of API calls and shader execution patterns across gaming engines"
       ],
       "link": "https://github.com/Pranay0205/gpu-cuda-performance-profiler",
+      "img": "/project_snapshots/GPU_Benchmarking.png",
       "date": "Nov 2024",
       "location": "Dartmouth, USA"
     },
     {
       "name": "Real-time Weather Analytics Platform",
       "organization": "Umass Dartmouth",
-      "tech_stack": ["Python", "Lambda Functions", "QuickSight", "REST APIs"],
+      "tech_stack": [
+        "Python",
+        "Lambda Functions",
+        "S3 Bucket",
+        "CloudWatch",
+        "QuickSight",
+        "REST APIs"
+      ],
       "achievements": [
         "Created a serverless AWS Lambda pipeline for real-time weather analysis across 14 regions",
         "Optimized S3 storage and CSV processing, cutting data retrieval time by 30%",
@@ -59,13 +81,14 @@
         "Improved feature extraction with K-means clustering and PCA"
       ],
       "link": "https://github.com/Pranay0205/ocular_eye_disease_detection",
+      "img": "/project_snapshots/Ocular_eye_disease.png",
       "date": "Nov 2024",
       "location": "Dartmouth, USA"
     },
     {
       "name": "Shadow-interiors Website",
       "organization": "Freelancing",
-      "tech_stack": ["React", "Firebase"],
+      "tech_stack": ["React", "MaterialUI", "JavaScript", "Firebase"],
       "achievements": [
         "Desinged and Developed Shadow-interiors, a website for an interior design company, using React and Firebase",
         "Crafted a clean and modern design that increased the online presence and brand awareness of the company",

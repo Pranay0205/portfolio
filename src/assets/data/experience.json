@@ -12,7 +12,7 @@
           "achievements": [
             "Architected RESTful API using Data Movement Library, React & .NET for multi-terabyte database transfers",
             "Developed intuitive file management interface and real-time dashboard streamlining data operations",
-            "Achieved 90% test coverage, cutting production incidents by 20%"
+            "Built api using Azure Data Movement Library for storage migration, reducing annual storage costs by $60K"
           ]
         }
       ]
@@ -28,8 +28,8 @@
           "name": "Enterprise Application Platform",
           "achievements": [
             "Consolidated multiple apps into single .NET & React webapp, reducing maintenance costs by 35%",
-            "Built modern React UI with optimized caching, reducing load times by 30%",
-            "Automated file processing workflow using Python scripts, reducing 1-hour process to 10 minutes"
+            "Built React UI with memoization optimization, reducing load times by 30%",
+            "Developed Python automation scripts to process files, reducing 1-hour process to 10 minutes"
           ]
         }
       ]
@@ -44,9 +44,9 @@
         {
           "name": "Financial Trading System",
           "achievements": [
-            "Led 5-member team to build .NET trading system with MySQL",
-            "Applied N-tier architecture principles to build enterprise applications",
-            "Leveraged Agile methodologies to deliver project milestones on schedule"
+            "Led 5-member team to develop trading system using .NET and MySQL",
+            "Built custom stored procedures for trade execution and portfolio tracking",
+            "Implemented JWT authentication for secure user access and authorization"
           ]
         }
       ]
