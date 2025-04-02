@@ -1,7 +1,20 @@
 {
   "projects": [
     {
-      "name": "Asteroids Vidoe Game",
+      "name": "Maze Solver",
+      "organization": "Umass Dartmouth",
+      "tech_stack": ["Python", "Pygame", "Tkinter", "OOP"],
+      "achievements": [
+        "Developed a Python-based Maze Solver, implementing efficient pathfinding algorithms like BFS and DFS to navigate complex mazes",
+        "Designed and implemented an interactive GUI using Tkinter, enhancing visualization and user interaction for maze generation and solving","Applied object-oriented programming principles, ensuring modular, maintainable, and scalable code architecture"
+      ],
+      "link": "https://github.com/Pranay0205/maze_solver",
+      "img": "/project_snapshots/Maze_Solver.gif",
+      "date": "Jan 2025",
+      "location": "Dartmouth, USA"
+    },
+    {
+      "name": "Asteroids Video Game",
       "organization": "Umass Dartmouth",
       "tech_stack": ["Python", "Pygame", "OOP"],
       "achievements": [
