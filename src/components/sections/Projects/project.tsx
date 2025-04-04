@@ -63,6 +63,7 @@ export default function Project() {
                     className="flex items-center gap-4 text-2xl font-bold text-gradient-white md:text-4xl"
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
                     transition={{ delay: 0.3 }}
                   >
                     {project.name}
@@ -79,6 +80,7 @@ export default function Project() {
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.4 }}
+                    viewport={{ once: true }}
                     className="space-y-3 md:space-y-4"
                   >
                     <h4 className="text-lg font-semibold text-gray-400 md:text-xl">
@@ -102,6 +104,7 @@ export default function Project() {
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.5 }}
+                    viewport={{ once: true }}
                     className="space-y-3"
                   >
                     <h4 className="text-lg font-semibold text-gray-400 md:text-xl">
@@ -124,6 +127,7 @@ export default function Project() {
                   className="relative mt-4 aspect-video w-full overflow-hidden rounded-lg md:col-span-7 md:mt-0"
                   initial={{ opacity: 0, x: 20 }}
                   whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
                   transition={{ delay: 0.4 }}
                 >
                   {project.img ? (

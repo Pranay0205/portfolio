@@ -8,10 +8,12 @@ import NavBar from "./components/sections/NavBar/navbar";
 import Footer from "./components/sections/Footer/footer";
 import Testimonials from "./components/sections/Testimonials/testimonials";
 import About from "./components/sections/About/about";
+import InteractiveBackground from "./components/sections/ui/InteractiveBackground";
 
 function App() {
   return (
     <div>
+      <InteractiveBackground />
       <NavBar />
       <main>
         <Hero />
