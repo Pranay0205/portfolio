@@ -61,29 +61,40 @@ export default function About() {
       <SectionHeading>About Me</SectionHeading>
       <div className="mx-auto my-5 max-w-7xl text-justify text-base sm:my-16 sm:text-lg md:text-xl lg:my-10 lg:text-2xl">
         <p className="mb-4 leading-relaxed sm:mb-6">
-          <TextContent>My love for technology began when I played </TextContent>
-          <GradientText>Project I.G.I. </GradientText>
+          <TextContent>I'm </TextContent>
+          <GradientText>Pranay Ghuge</GradientText>
+          <TextContent>, a software engineer with </TextContent>
+          <GradientText>3+ years of experience</GradientText>
           <TextContent>
-            — but not just for the missions. I was fascinated by how the game
-            worked behind the scenes, sparking a curiosity that led me to
-            computer science.
+            {" "}
+            building scalable, user-friendly web applications and backend
+            systems across startups and enterprise teams.
           </TextContent>
         </p>
         <p className="mb-4 leading-relaxed sm:mb-6">
           <TextContent>
-            For me, programming is all about keeping things simple. I love
-            figuring out how things work and turning that understanding into{" "}
+            My main focus areas are full-stack development, API design, and
+            automation tooling — especially when it means turning messy problems
+            into smooth user experiences. I've worked with tools like React,
+            Python, Go and Azure, and I'm always exploring new tech to stay
+            sharp.
           </TextContent>
-          <GradientText>clean, straightforward code.</GradientText>
         </p>
         <p className="mb-4 leading-relaxed sm:mb-6">
           <TextContent>
-            When I'm not coding, I'm exploring new technologies, working on side
-            projects, diving into gaming, or getting lost in a good movie. I
-            take pride in writing clean, maintainable code and enjoy turning
-            complex problems into{" "}
+            I approach my work with a builder's mindset: I like fast iterations,
+            thoughtful design, and{" "}
           </TextContent>
-          <GradientText>simple, effective solutions.</GradientText>
+          <GradientText>clean architecture </GradientText>
+          <TextContent>
+            that holds up over time. Previously, I worked at{" "}
+          </TextContent>
+          <GradientText>Accenture</GradientText>
+          <TextContent>
+            , where I helped optimize large-scale internal platforms. Outside
+            work, I'm usually experimenting with side projects, gaming, or
+            watching a great movie.
+          </TextContent>
         </p>
       </div>
       <div className="flex gap-8 self-center">

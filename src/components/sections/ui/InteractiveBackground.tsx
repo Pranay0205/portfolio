@@ -22,7 +22,7 @@ export default function OriginalParticleBackground() {
   // Initialize particles
   const initParticles = (width: number, height: number) => {
     const particles: Particle[] = [];
-    const particleCount = Math.floor((width * height) / 18000); // Adjust density based on screen size
+    const particleCount = Math.floor((width * height) / 15000); // Adjust density based on screen size
 
     for (let i = 0; i < particleCount; i++) {
       particles.push({
