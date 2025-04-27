@@ -137,12 +137,18 @@ export default function NavBar() {
       className="fixed left-0 right-0 top-0 z-50 mt-4 origin-center rounded-xl bg-gray-900/50 p-2 backdrop-blur-sm max-sm:mx-auto max-sm:w-[90%] md:mx-28 lg:mx-28"
     >
       <div className="mx-auto flex items-center justify-between px-4 md:px-12">
-        <img
-          src={personalLogo}
-          className="h-8 w-auto object-contain p-0 max-sm:h-10 md:h-16 md:p-2"
-          alt="Logo_With_Animation"
-        />
+        <div
+          className="cursor-pointer"
+          onClick={(event) => handleNavClick(event, "#home")}
+        >
+          <img
+            src={personalLogo}
+            className="h-8 w-auto object-contain p-0 max-sm:h-10 md:h-16 md:p-2"
+            alt="Logo_With_Animation"
+          />
+        </div>
 
+        {/* Logo */}
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
