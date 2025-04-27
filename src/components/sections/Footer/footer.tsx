@@ -2,11 +2,17 @@ import logo from "../../../assets/img/Logo_bg.png";
 
 export default function footer() {
   return (
-    <footer className="footer footer-center bg-gray-900/40 border border-gray-800 text-primary-content p-2 flex justify-center text-center">
-      <div className="flex flex-col">
-        <img src={logo} alt="logo" className="w-fit h-16 self-center flex" />
-        <p className="font-bold">Pranay Ghuge</p>
-        <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
+    <footer className="footer footer-center text-primary-content flex justify-center border border-gray-800 bg-gray-900/40 p-2 text-center">
+      <div className="flex flex-col items-center">
+        <img
+          src={logo}
+          alt="logo"
+          className="h-16 w-auto self-center sm:h-12"
+        />
+        <p className="text-lg font-bold sm:text-base">Pranay Ghuge</p>
+        <p className="text-sm sm:text-xs">
+          Copyright © {new Date().getFullYear()} - All right reserved
+        </p>
       </div>
     </footer>
   );
