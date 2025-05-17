@@ -10,9 +10,9 @@
         {
           "name": "Database Migration Tool",
           "achievements": [
-            "Architected RESTful API using Data Movement Library, React & .NET for multi-terabyte database transfers",
-            "Developed intuitive file management interface and real-time dashboard streamlining data operations",
-            "Built api using Azure Data Movement Library for storage migration, reducing annual storage costs by $60K"
+            "Built RESTful API using Azure Data Movement Library and parallelized chunked uploads to enable multi-terabyte data transfers from premium to cheaper storage, cutting storage costs by $60K annually",
+            "Developed file management UI and real-time dashboard using React.js and Material UI, utilizing custom data structures to efficiently track folders and contents",
+            "Built Jest/Testing Library suite with 90% coverage, reducing UI defects and shortening development time"
           ]
         }
       ]
@@ -27,9 +27,9 @@
         {
           "name": "Enterprise Application Platform",
           "achievements": [
-            "Consolidated multiple apps into single .NET & React webapp, reducing maintenance costs by 35%",
-            "Built React UI with memoization optimization, reducing load times by 30%",
-            "Developed Python automation scripts to process files, reducing 1-hour process to 10 minutes"
+            "Rewrote and consolidated multiple legacy Delphi applications into a single modular .NET Core backend with a React frontend reducing maintenance costs by 35%",
+            "Designed and optimized React UI with memoization, pagination, and a custom search engine, improving data retrieval efficiency and reducing load times by 30%",
+            "Automated file renaming, zipping, and server uploads with Python, cutting process time from 1 hour to 10 minutes and enabling quick data validation with custom optimized SQL queries"
           ]
         }
       ]

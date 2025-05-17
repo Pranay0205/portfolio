@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import classes from "./hero.module.css";
-import myLightingDP from "../../../assets/img/Pranay_DP_Lighting_Cropped.png";
+import myLightingDP from "../../../assets/img/Pranay.png";
+
 import { motion, AnimatePresence } from "framer-motion";
 
 function randomletter() {

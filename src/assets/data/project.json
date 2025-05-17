@@ -6,7 +6,8 @@
       "tech_stack": ["Python", "Pygame", "Tkinter", "OOP"],
       "achievements": [
         "Developed a Python-based Maze Solver, implementing efficient pathfinding algorithms like BFS and DFS to navigate complex mazes",
-        "Designed and implemented an interactive GUI using Tkinter, enhancing visualization and user interaction for maze generation and solving","Applied object-oriented programming principles, ensuring modular, maintainable, and scalable code architecture"
+        "Designed and implemented an interactive GUI using Tkinter, enhancing visualization and user interaction for maze generation and solving",
+        "Applied object-oriented programming principles, ensuring modular, maintainable, and scalable code architecture"
       ],
       "link": "https://github.com/Pranay0205/maze_solver",
       "img": "/project_snapshots/Maze_Solver.gif",
@@ -18,9 +19,8 @@
       "organization": "Umass Dartmouth",
       "tech_stack": ["Python", "Pygame", "OOP"],
       "achievements": [
-        "Developed a 2D space shooter game using Python and Pygame",
-        "Implemented real-time physics and collision detection systems",
-        "Designed object-oriented architecture using inheritance and encapsulation for game management"
+        "Developed a 2D space shooter game in Python using Pygame, implementing real-time physics, collision detection, and responsive controls.",
+        "Designed an object-oriented architecture with class inheritance to manage game logic, entities, and interactions efficiently."
       ],
       "link": "https://github.com/Pranay0205/asteroids-game",
       "img": "/project_snapshots/Asteroids.webp",
@@ -28,16 +28,28 @@
       "location": "Dartmouth, USA"
     },
     {
-      "name": "Auto Doc",
+      "name": "AutoDoc",
       "organization": "Brown University",
       "tech_stack": ["Python", "React.JS", "FastAPI", "Ollama", "Tailwind CSS"],
       "achievements": [
-        "Built AI-powered Python documentation generator using Deepseek model via Ollama and FastAPI",
-        "Developed interactive documentation viewer in React with PDF export functionality",
-        "Built FastAPI backend with async processing and code files handling for Python documentation"
+        "Engineered an AI-powered Python documentation generator using DeepSeek via Ollama with a FastAPI backend, enabling async code parsing and efficient model integration",
+        "Built an interactive React/TailwindCSS viewer with PDF export functionality, allowing users to browse and download generated documentation with ease"
       ],
       "link": "https://github.com/Pranay0205/autodoc",
       "img": "/project_snapshots/AutoDoc.png",
+      "date": "Feb 2025",
+      "location": "Dartmouth, USA"
+    },
+    {
+      "name": "Static Site Generator",
+      "organization": "Brown University",
+      "tech_stack": ["Python", "React.JS", "FastAPI", "Ollama", "Tailwind CSS"],
+      "achievements": [
+        "Built a custom static site generator in Python to convert Markdown to HTML with advanced formatting and templating support.",
+        "Designed a modular architecture with 90%+ test coverage and automated the build process for streamlined website generation."
+      ],
+      "link": "https://github.com/Pranay0205/static-site-generator",
+
       "date": "Feb 2025",
       "location": "Dartmouth, USA"
     },
