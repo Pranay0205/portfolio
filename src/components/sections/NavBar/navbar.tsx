@@ -76,10 +76,7 @@ export default function NavBar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos, navLinks]);
 
-  const handleNavClick = (
-    e: React.MouseEvent<HTMLAnchorElement>,
-    path: string,
-  ) => {
+  const handleNavClick = (e: React.MouseEvent<HTMLElement>, path: string) => {
     e.preventDefault();
     const element = document.getElementById(path.slice(1));
     if (element) {
