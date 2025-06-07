@@ -10,14 +10,14 @@
     "JWT"
    ],
    "achievements": [
-    "Built an e-commerce app with Flaska and React auth, cart, and RESTful APIs for orders and inventory ",
-    "Designed modular architecture using SOLID principles for scalability ",
-    "Applied Factory and Command patterns for clean structure and reliability ",
-    "Applied input validation, JWT-based authentication, and access control to protect sensitive operations ",
-    "Handled 100+ simultaneous users in testing with smooth cart updates and no order failures "
+    "Built an e-commerce app with Flaska and React auth, cart, and RESTful APIs for orders and inventory",
+    "Designed modular architecture using SOLID principles for scalability",
+    "Applied Factory and Command patterns for clean structure and reliability",
+    "Applied input validation, JWT-based authentication, and access control to protect sensitive operations",
+    "Handled 100+ simultaneous users in testing with smooth cart updates and no order failures"
    ],
    "link": "https://github.com/Pranay0205/emporia",
-   "img": "/project_snapshots/Emporia.png",
+   "img": "",
    "date": "2025",
    "location": "Dartmouth, USA"
   },
@@ -32,10 +32,10 @@
     "Tailwind CSS"
    ],
    "achievements": [
-    "Built an AI-powered Python documentation generator using DeepSeek via Ollama ",
-    "Implemented a FastAPI backend with async code parsing and seamless model integration ",
-    "Developed an interactive viewer using React and TailwindCSS ",
-    "Added PDF export to enable easy Browse and downloading of generated docs "
+    "Built an AI-powered Python documentation generator using DeepSeek via Ollama",
+    "Implemented a FastAPI backend with async code parsing and seamless model integration",
+    "Developed an interactive viewer using React and TailwindCSS",
+    "Added PDF export to enable easy Browse and downloading of generated docs"
    ],
    "link": "https://github.com/Pranay0205/autodoc",
    "img": "/project_snapshots/AutoDoc.png",
@@ -49,12 +49,12 @@
     "Python"
    ],
    "achievements": [
-    "Built a custom static site generator in Python to convert Markdown to HTML ",
-    "Added support for advanced formatting and templating features ",
-    "Designed a modular architecture with over 90% test coverage "
+    "Built a custom static site generator in Python to convert Markdown to HTML",
+    "Added support for advanced formatting and templating features",
+    "Designed a modular architecture with over 90% test coverage"
    ],
    "link": "https://github.com/Pranay0205/static-site-generator",
-   "img": "/project_snapshots/Static_Site_Generator.png",
+   "img": "",
    "date": "2025",
    "location": "Dartmouth, USA"
   },
@@ -70,9 +70,9 @@
     "REST APIs"
    ],
    "achievements": [
-    "Architected a serverless AWS Lambda pipeline for weather data analysis across 10+ regions ",
-    "Implemented IAM roles and access controls to secure AWS resources and manage permissions ",
-    "Designed an interactive dashboard for climate zone monitoring and real-time alerts "
+    "Architected a serverless AWS Lambda pipeline for weather data analysis across 10+ regions",
+    "Implemented IAM roles and access controls to secure AWS resources and manage permissions",
+    "Designed an interactive dashboard for climate zone monitoring and real-time alerts"
    ],
    "link": "https://github.com/Pranay0205/realtime-weather-data-analysis",
    "img": "/project_snapshots/Dashboard.png",
