@@ -2,19 +2,24 @@
  "projects": [
   {
    "name": "Emporia E-commerce Platform",
-   "organization": null,
-   "tech_stack": [],
-   "achievements": [
-    "Built an e-commerce app with Flaska and React auth, cart, and RESTful APIs for orders and inventory",
-    "Designed modular architecture using SOLID principles for scalability",
-    "Applied Factory and Command patterns for clean structure and reliability",
-    "Applied input validation, JWT-based authentication, and access control to protect sensitive operations",
-    "Handled 100+ simultaneous users in testing with smooth cart updates and no order failures"
+   "organization": "Personal Project",
+   "tech_stack": [
+    "Flask",
+    "React",
+    "RESTful APIs",
+    "JWT"
    ],
-   "link": null,
-   "img": null,
+   "achievements": [
+    "Built an e-commerce app with Flaska and React auth, cart, and RESTful APIs for orders and inventory ",
+    "Designed modular architecture using SOLID principles for scalability ",
+    "Applied Factory and Command patterns for clean structure and reliability ",
+    "Applied input validation, JWT-based authentication, and access control to protect sensitive operations ",
+    "Handled 100+ simultaneous users in testing with smooth cart updates and no order failures "
+   ],
+   "link": "https://github.com/Pranay0205/emporia",
+   "img": "/project_snapshots/Emporia.png",
    "date": "2025",
-   "location": null
+   "location": "Dartmouth, USA"
   },
   {
    "name": "AutoDoc",
@@ -34,22 +39,24 @@
    ],
    "link": "https://github.com/Pranay0205/autodoc",
    "img": "/project_snapshots/AutoDoc.png",
-   "date": "2025",
-   "location": null
+   "date": "Feb 2025",
+   "location": "Dartmouth, USA"
   },
   {
-   "name": "Static-Site-Generator",
-   "organization": null,
-   "tech_stack": [],
-   "achievements": [
-    "Built a custom static site generator in Python to convert Markdown to HTML",
-    "Added support for advanced formatting and templating features",
-    "Designed a modular architecture with over 90% test coverage"
+   "name": "Static Site Generator",
+   "organization": "Personal Project",
+   "tech_stack": [
+    "Python"
    ],
-   "link": null,
-   "img": null,
+   "achievements": [
+    "Built a custom static site generator in Python to convert Markdown to HTML ",
+    "Added support for advanced formatting and templating features ",
+    "Designed a modular architecture with over 90% test coverage "
+   ],
+   "link": "https://github.com/Pranay0205/static-site-generator",
+   "img": "/project_snapshots/Static_Site_Generator.png",
    "date": "2025",
-   "location": null
+   "location": "Dartmouth, USA"
   },
   {
    "name": "Real-time Weather Analytics Platform",
@@ -63,14 +70,14 @@
     "REST APIs"
    ],
    "achievements": [
-    "Architected a serverless AWS Lambda pipeline for weather data analysis across 10+ regions",
-    "Implemented IAM roles and access controls to secure AWS resources and manage permissions",
-    "Designed an interactive dashboard for climate zone monitoring and real-time alerts"
+    "Architected a serverless AWS Lambda pipeline for weather data analysis across 10+ regions ",
+    "Implemented IAM roles and access controls to secure AWS resources and manage permissions ",
+    "Designed an interactive dashboard for climate zone monitoring and real-time alerts "
    ],
    "link": "https://github.com/Pranay0205/realtime-weather-data-analysis",
    "img": "/project_snapshots/Dashboard.png",
-   "date": "2024",
-   "location": null
+   "date": "Nov 2024",
+   "location": "Dartmouth, USA"
   },
   {
    "name": "Maze Solver",
