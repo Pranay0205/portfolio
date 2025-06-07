@@ -1,23 +1,18 @@
 {
   "experiences": [
     {
-      "role": "Software Engineer Analyst",
+      "role": "Software Engineering Analyst",
       "company": "Accenture",
       "logo": "/companies/Accenture.png",
-      "period": "Jul 2022 – Jul 2024",
+      "period": "Jun 2022 – Jul 2024",
       "location": "Bengaluru, India",
       "projects": [
         {
-          "name": "Data Transfer and File Management System",
+          "name": "Database Migration Tool",
           "achievements": [
-            "Built a RESTful API to manage large-scale data transfers between Azure storage tiers",
-            "Leveraged Azure Data Movement Library to perform parallelized, chunked uploads",
-            "Enabled efficient multi-terabyte transfers to cheaper storage, cutting cloud costs significantly",
-            "Designed and developed a file management UI using React.js and Material UI",
-            "Created custom data structures to track folder hierarchies, file metadata, and upload progress efficiently",
-            "Delivered 130+ user stories in 50+ agile sprints; participated in planning, standups, and retrospectives",
-            "Collaborated with end users/stakeholders to gather requirements and deliver iterative updates",
-            "Created technical documentation for deployment, architecture, and user onboarding"
+            "Built RESTful API using Azure Data Movement Library and parallelized chunked uploads to enable multi-terabyte data transfers from premium to cheaper storage, cutting storage costs by $60K annually",
+            "Developed file management UI and real-time dashboard using React.js and Material UI, utilizing custom data structures to efficiently track folders and contents",
+            "Built Jest/Testing Library suite with 90% coverage, reducing UI defects and shortening development time"
           ]
         }
       ]
@@ -30,14 +25,11 @@
       "location": "Bengaluru, India",
       "projects": [
         {
-          "name": "Legacy System Modernization",
+          "name": "Enterprise Application Platform",
           "achievements": [
-            "Modernized legacy Delphi apps into a modular .NET Core backend with React frontend",
-            "Improved system maintainability and reduced long-term support effort by 35% through backend consolidation",
-            "Optimized React UI with memoization, pagination, and custom search, reducing load times by 30%",
-            "Automated file processing with Python, cutting task time from 1 hour to 10 minutes",
-            "Solely developed and deployed backend, frontend, and automation components",
-            "Set up CI/CD pipeline for seamless deployments using Azure DevOps"
+            "Rewrote and consolidated multiple legacy Delphi applications into a single modular .NET Core backend with a React frontend reducing maintenance costs by 35%",
+            "Designed and optimized React UI with memoization, pagination, and a custom search engine, improving data retrieval efficiency and reducing load times by 30%",
+            "Automated file renaming, zipping, and server uploads with Python, cutting process time from 1 hour to 10 minutes and enabling quick data validation with custom optimized SQL queries"
           ]
         }
       ]
@@ -67,7 +59,7 @@
       "location": "Jaipur, India",
       "projects": [
         {
-          "name": "Sales Forecasting & Dashboarding",
+          "name": "",
           "achievements": [
             "Created an ML model for forecasting sales using Python, achieving 80% accuracy",
             "Data Visualization using Power BI, creating interactive dashboards and reports that displayed key insights and trends for decision making"

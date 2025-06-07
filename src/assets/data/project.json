@@ -1,82 +1,105 @@
 {
   "projects": [
     {
-      "name": "Emporia E-commerce Platform",
-      "organization": "Personal Project",
-      "tech_stack": ["Python", "Flask", "React.js", "JWT", "REST APIs"],
+      "name": "Maze Solver",
+      "organization": "Umass Dartmouth",
+      "tech_stack": ["Python", "Pygame", "Tkinter", "OOP"],
       "achievements": [
-        "Built an e-commerce app with Flask and React featuring authentication, cart, and RESTful APIs for orders and inventory",
-        "Designed modular architecture using SOLID principles for scalability",
-        "Applied Factory and Command patterns for clean structure and reliability",
-        "Implemented input validation, JWT-based authentication, and access control",
-        "Handled 100+ simultaneous users in testing with smooth cart updates and no order failures"
+        "Developed a Python-based Maze Solver, implementing efficient pathfinding algorithms like BFS and DFS to navigate complex mazes",
+        "Designed and implemented an interactive GUI using Tkinter, enhancing visualization and user interaction for maze generation and solving",
+        "Applied object-oriented programming principles, ensuring modular, maintainable, and scalable code architecture"
       ],
-      "link": "https://github.com/Pranay0205/emporia",
-      "img": "/project_snapshots/Emporia.png",
-      "date": "2025",
+      "link": "https://github.com/Pranay0205/maze_solver",
+      "img": "/project_snapshots/Maze_Solver.gif",
+      "date": "Jan 2025",
+      "location": "Dartmouth, USA"
+    },
+    {
+      "name": "Asteroids Video Game",
+      "organization": "Umass Dartmouth",
+      "tech_stack": ["Python", "Pygame", "OOP"],
+      "achievements": [
+        "Developed a 2D space shooter game in Python using Pygame, implementing real-time physics, collision detection, and responsive controls.",
+        "Designed an object-oriented architecture with class inheritance to manage game logic, entities, and interactions efficiently."
+      ],
+      "link": "https://github.com/Pranay0205/asteroids-game",
+      "img": "/project_snapshots/Asteroids.webp",
+      "date": "Jan 2025",
       "location": "Dartmouth, USA"
     },
     {
       "name": "AutoDoc",
-      "organization": "Hack@Brown, Brown University",
-      "tech_stack": ["Python", "React.js", "FastAPI", "Tailwind CSS", "Ollama"],
+      "organization": "Brown University",
+      "tech_stack": ["Python", "React.JS", "FastAPI", "Ollama", "Tailwind CSS"],
       "achievements": [
-        "Built an AI-powered Python documentation generator using DeepSeek via Ollama",
-        "Implemented a FastAPI backend with async code parsing and seamless model integration",
-        "Developed an interactive viewer using React and TailwindCSS",
-        "Added PDF export to enable easy browsing and downloading of generated docs"
+        "Engineered an AI-powered Python documentation generator using DeepSeek via Ollama with a FastAPI backend, enabling async code parsing and efficient model integration",
+        "Built an interactive React/TailwindCSS viewer with PDF export functionality, allowing users to browse and download generated documentation with ease"
       ],
       "link": "https://github.com/Pranay0205/autodoc",
       "img": "/project_snapshots/AutoDoc.png",
-      "date": "2025",
+      "date": "Feb 2025",
       "location": "Dartmouth, USA"
     },
     {
       "name": "Static Site Generator",
-      "organization": "Personal Project",
-      "tech_stack": ["Python"],
+      "organization": "Brown University",
+      "tech_stack": ["Python", "React.JS", "FastAPI", "Ollama", "Tailwind CSS"],
       "achievements": [
-        "Built a custom static site generator in Python to convert Markdown to HTML",
-        "Added support for advanced formatting and templating features",
-        "Designed a modular architecture with over 90% test coverage"
+        "Built a custom static site generator in Python to convert Markdown to HTML with advanced formatting and templating support.",
+        "Designed a modular architecture with 90%+ test coverage and automated the build process for streamlined website generation."
       ],
       "link": "https://github.com/Pranay0205/static-site-generator",
-      "img": "/project_snapshots/Static_Site_Generator.png",
-      "date": "2025",
-      "location": "Dartmouth, USA"
-    },
-    {
-      "name": "Real-time Weather Analytics Platform",
-      "organization": "UMass Dartmouth",
-      "tech_stack": ["AWS Lambda", "Python", "S3", "CloudWatch", "QuickSight", "REST APIs"],
-      "achievements": [
-        "Architected a serverless AWS Lambda pipeline for weather data analysis across 10+ regions",
-        "Implemented IAM roles and access controls to secure AWS resources and manage permissions",
-        "Designed an interactive dashboard for climate zone monitoring and real-time alerts"
-      ],
-      "link": "https://github.com/Pranay0205/realtime-weather-data-analysis",
-      "img": "/project_snapshots/Dashboard.png",
-      "date": "2024",
+
+      "date": "Feb 2025",
       "location": "Dartmouth, USA"
     },
     {
       "name": "GPU Architecture Performance Analysis",
-      "organization": "UMass Dartmouth",
-      "tech_stack": ["Python", "CUDA", "Nsight Compute", "Nsight Graphics", "Unity", "Unreal", "DirectX 12"],
+      "organization": "Umass Dartmouth",
+      "tech_stack": [
+        "Python",
+        "NVIDIA CUDA",
+        "NVIDIA API",
+        "Unity Engine",
+        "Unreal Engine",
+        "DirectX 12",
+        "RenderDoc"
+      ],
       "achievements": [
-        "Developed Python scripts to monitor GPU performance across NVIDIA architectures",
-        "Benchmarked CUDA kernels on RTX 3000/4000 series GPUs using Nsight Compute",
-        "Utilized Nsight Graphics to analyze API calls and shader execution in gaming engines"
+        "Developed Python scripts to monitor GPU performance across NVIDIA architectures, tracking TFLOPS, bandwidth, and optimization metrics",
+        "Benchmarked CUDA kernels on RTX 3000/4000 series GPUs using Nsight Compute, analyzing architectural performance impacts",
+        "Utilized Nsight Graphics for comprehensive analysis of API calls and shader execution patterns across gaming engines"
       ],
       "link": "https://github.com/Pranay0205/gpu-cuda-performance-profiler",
       "img": "/project_snapshots/GPU_Benchmarking.png",
-      "date": "2024",
+      "date": "Nov 2024",
+      "location": "Dartmouth, USA"
+    },
+    {
+      "name": "Real-time Weather Analytics Platform",
+      "organization": "Umass Dartmouth",
+      "tech_stack": [
+        "Python",
+        "Lambda Functions",
+        "S3 Bucket",
+        "CloudWatch",
+        "QuickSight",
+        "REST APIs"
+      ],
+      "achievements": [
+        "Created a serverless AWS Lambda pipeline for real-time weather analysis across 14 regions",
+        "Optimized S3 storage and CSV processing, cutting data retrieval time by 30%",
+        "Built an interactive weather dashboard with alerts for climate zone monitoring"
+      ],
+      "link": "https://github.com/Pranay0205/realtime-weather-data-analysis",
+      "img": "/project_snapshots/Dashboard.png",
+      "date": "Nov 2024",
       "location": "Dartmouth, USA"
     },
     {
       "name": "Ocular Eye Disease Detection",
-      "organization": "UMass Dartmouth",
-      "tech_stack": ["Python", "TensorFlow", "EfficientNetB0", "PCA", "K-means"],
+      "organization": "Umass Dartmouth",
+      "tech_stack": ["Python", "Tensorflow", "CNN"],
       "achievements": [
         "Developed an ML model with TensorFlow to detect 8 ocular diseases from 5000+ retinal images",
         "Achieved 86% accuracy using EfficientNetB0 and transfer learning",
@@ -84,21 +107,21 @@
       ],
       "link": "https://github.com/Pranay0205/ocular_eye_disease_detection",
       "img": "/project_snapshots/Ocular_eye_disease.png",
-      "date": "2024",
+      "date": "Nov 2024",
       "location": "Dartmouth, USA"
     },
     {
       "name": "Shadow-interiors Website",
       "organization": "Freelancing",
-      "tech_stack": ["React", "Material UI", "JavaScript", "Firebase"],
+      "tech_stack": ["React", "MaterialUI", "JavaScript", "Firebase"],
       "achievements": [
-        "Designed and developed a website for an interior design company using React and Firebase",
-        "Crafted a clean, modern UI that increased brand presence",
-        "Deployed to Firebase Hosting, improving performance and scalability"
+        "Desinged and Developed Shadow-interiors, a website for an interior design company, using React and Firebase",
+        "Crafted a clean and modern design that increased the online presence and brand awareness of the company",
+        "Deployed the website to Firebase Hosting, enhancing the performance, security, and scalability of the website"
       ],
       "link": "https://github.com/Pranay0205/shadow-interiors",
       "img": "/project_snapshots/Shadow_interiors.webp",
-      "date": "2022",
+      "date": "Apr 2022",
       "location": "Pune, India"
     }
   ]
