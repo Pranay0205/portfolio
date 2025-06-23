@@ -1,32 +1,6 @@
 import { motion } from "framer-motion";
 import SectionHeading from "../ui/sectionheadings";
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { IconType } from "react-icons";
-
-interface SocialIcon {
-  icon: IconType;
-  href: string;
-  hoverColor?: string;
-}
-
-const socialIcons: SocialIcon[] = [
-  {
-    icon: FaInstagram,
-    href: "https://www.instagram.com/pranayghuge/",
-    hoverColor: "hover:text-pink-500",
-  },
-  {
-    icon: FaXTwitter,
-    href: "https://x.com/PranayGhuge2/",
-    hoverColor: "hover:text-gray-400",
-  },
-  {
-    icon: FaLinkedin,
-    href: "https://www.linkedin.com/in/pranay-ghuge-2a4a75137/",
-    hoverColor: "hover:text-blue-600",
-  },
-];
+import { socialIcons } from "../ui/SocialIcons"
 
 const GradientText = ({ children }: { children: React.ReactNode }) => (
   <motion.span
@@ -51,6 +25,18 @@ const TextContent = ({ children }: { children: React.ReactNode }) => (
     {children}
   </motion.span>
 );
+
+const MotionDiv = ({children, className} : {children: React.ReactNode, className : string}) => (
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ amount: "some", once: true }}
+    transition={{ duration: 0.8, delay: 0.7 }}
+    className={className}
+  >
+    {children}
+  </motion.div>
+)
 
 export default function About() {
   return (
@@ -97,7 +83,7 @@ export default function About() {
           </TextContent>
         </p>
       </div>
-      <div className="flex gap-8 self-center">
+      <MotionDiv className="flex gap-8 self-center">
         {socialIcons.map((social, index) => {
           const Icon = social.icon;
           return (
@@ -112,7 +98,7 @@ export default function About() {
             </a>
           );
         })}
-      </div>
+      </MotionDiv>
     </section>
   );
 }

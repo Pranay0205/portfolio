@@ -155,7 +155,7 @@ export default function OriginalParticleBackground() {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed left-0 top-0 -z-10 h-full w-full bg-gradient-to-br from-gray-50 to-gray-400 dark:from-gray-900 dark:to-gray-800"
+      className="fixed left-0 top-0 -z-10 h-full w-full bg-gradient-to-br from-gray-600 to-gray-400 dark:from-gray-900 dark:to-gray-800"
     />
   );
 }
