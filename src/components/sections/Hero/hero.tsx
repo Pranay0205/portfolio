@@ -56,13 +56,15 @@ export default function Hero() {
   }
 
   const words = [
-    "console logs",
+    "console.log() spam",
     "hardcoding values",
     "404 pages",
     "infinite loops",
     "bad docs",
-    "prod testing",
+    "testing in prod",
+    "undefined" ,
     "git push --force",
+
   ];
 
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
