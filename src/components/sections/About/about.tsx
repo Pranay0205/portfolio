@@ -45,42 +45,33 @@ export default function About() {
       className="flex h-full flex-col justify-center px-4 sm:px-6 lg:px-8"
     >
       <SectionHeading>About Me</SectionHeading>
-      <div className="mx-auto my-5 max-w-7xl text-justify text-base sm:my-16 sm:text-lg md:text-xl lg:my-10 lg:text-2xl">
+        <div className="mx-auto my-5 max-w-7xl text-justify text-base sm:my-16 sm:text-lg md:text-xl lg:my-10 lg:text-2xl">
         <p className="mb-4 leading-relaxed sm:mb-6">
           <TextContent>I'm </TextContent>
           <GradientText>Pranay Ghuge</GradientText>
-          <TextContent>, a software engineer with </TextContent>
-          <GradientText>3+ years of experience</GradientText>
-          <TextContent>
-            {" "}
-            building scalable, user-friendly web applications and backend
-            systems across startups and enterprise teams.
-          </TextContent>
+          <TextContent>, a software engineer driven by a straightforward passion: </TextContent>
+          <GradientText>building good, new things</GradientText>
+          <TextContent> and </TextContent>
+          <GradientText>constantly learning how to do it better</GradientText>
+          <TextContent>. That </TextContent>
+          <GradientText>curiosity</GradientText>
+          <TextContent> has been the engine of my career, from my first projects to my first company work as a software engineer. For me, the best part of software engineering is the endless opportunity to </TextContent>
+          <GradientText>learn new concepts</GradientText>
+          <TextContent> and </TextContent>
+          <GradientText>create</GradientText>
+          <TextContent>.</TextContent>
         </p>
+
         <p className="mb-4 leading-relaxed sm:mb-6">
-          <TextContent>
-            My main focus areas are full-stack development, API design, and
-            automation tooling — especially when it means turning messy problems
-            into smooth user experiences. I've worked with tools like React,
-            Python, Go and Azure, and I'm always exploring new tech to stay
-            sharp.
-          </TextContent>
-        </p>
-        <p className="mb-4 leading-relaxed sm:mb-6">
-          <TextContent>
-            I approach my work with a builder's mindset: I like fast iterations,
-            thoughtful design, and{" "}
-          </TextContent>
-          <GradientText>clean architecture </GradientText>
-          <TextContent>
-            that holds up over time. Previously, I worked at{" "}
-          </TextContent>
-          <GradientText>Accenture</GradientText>
-          <TextContent>
-            , where I helped optimize large-scale internal platforms. Outside
-            work, I'm usually experimenting with side projects, gaming, or
-            watching a great movie.
-          </TextContent>
+          <TextContent>Beyond my day job, I love </TextContent>
+          <GradientText>exploring emerging technologies</GradientText>
+          <TextContent> and </TextContent>
+          <GradientText>building passion projects</GradientText>
+          <TextContent> that push my boundaries. And when I'm away from the screen, I'm usually </TextContent>
+          <GradientText>exploring virtual worlds</GradientText>
+          <TextContent> - currently counting down for GTA 6 - or </TextContent>
+          <GradientText>getting lost in a great movie</GradientText>
+          <TextContent>.</TextContent>
         </p>
       </div>
       <MotionDiv className="flex gap-8 self-center">
