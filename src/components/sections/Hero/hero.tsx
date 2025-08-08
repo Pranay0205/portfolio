@@ -62,9 +62,8 @@ export default function Hero() {
     "infinite loops",
     "bad docs",
     "testing in prod",
-    "undefined" ,
+    "undefined",
     "git push --force",
-
   ];
 
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -79,18 +78,21 @@ export default function Hero() {
   return (
     <section id="home">
       <div className="grid h-screen w-screen select-none grid-cols-2 place-items-center gap-4 p-4 text-base max-sm:mt-12 max-sm:grid-cols-1 max-sm:gap-0 sm:grid-cols-1 sm:text-sm md:grid-cols-1 md:gap-2 md:p-8 md:text-lg lg:grid-cols-2 lg:text-xl">
-      
-        <motion.div 
-            className="max-w-2xl text-center font-bold sm:text-left"  
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}>
-             <div className="flex items-center space-x-4">
-              <Badge variant="outline" className="bg-green-900/20 border-green-500 text-green-400 px-4 py-2 ">
-                <div className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></div>
-                Available for opportunities
-              </Badge>
-            </div>
+        <motion.div
+          className="max-w-2xl text-center font-bold sm:text-left"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <div className="flex items-center justify-center space-x-4 sm:justify-start">
+            <Badge
+              variant="outline"
+              className="border-green-500 bg-green-900/20 px-4 py-2 text-green-400"
+            >
+              <div className="mr-2 h-2 w-2 animate-pulse rounded-full bg-green-400"></div>
+              Available for opportunities
+            </Badge>
+          </div>
           <motion.p
             className="sm:text-md mb-4 mt-6 p-0 text-xs text-gradient-white max-sm:mb-0 max-sm:text-lg sm:mb-8 md:text-lg"
             initial={{ opacity: 0, y: 20 }}
@@ -146,25 +148,26 @@ export default function Hero() {
             {" "}
             to build something amazing
           </motion.p>
-          <motion.div        
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="flex gap-8 self-center mt-8">
-           {socialIcons.map((social, index) => {
-          const Icon = social.icon;
-          return (
-            <a
-              key={index + social.href}
-              href={social.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`h-8 w-8 ${social.hoverColor} transition-colors duration-200 max-sm:h-8 max-sm:w-8`}
-            >
-              <Icon className="h-full w-full" />
-            </a>
-          );
-        })}
+            className="mt-8 flex justify-center gap-8 sm:justify-start"
+          >
+            {socialIcons.map((social, index) => {
+              const Icon = social.icon;
+              return (
+                <a
+                  key={index + social.href}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`h-8 w-8 ${social.hoverColor} transition-colors duration-200 max-sm:h-8 max-sm:w-8`}
+                >
+                  <Icon className="h-full w-full" />
+                </a>
+              );
+            })}
           </motion.div>
         </motion.div>
         <motion.div
@@ -173,7 +176,7 @@ export default function Hero() {
           transition={{ duration: 1 }}
           className={[
             classes.card_wrapper,
-            "max-sm:w-full max-sm:max-w-md ",
+            "max-sm:w-full max-sm:max-w-md",
           ].join(" ")}
         >
           <div
